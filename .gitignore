@@ -1,0 +1,24 @@
+# OS / editor noise
+Thumbs.db
+.DS_Store
+desktop.ini
+*.swp
+*~
+
+# Bash / Cygwin / Git-for-Windows crash dumps
+*.stackdump
+
+# Python tooling
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# MetaTrader 5 compiled binaries (sources are the .mq5 files in EA/)
+*.ex5
+
+# Local working notes / scratch files
+*.local.*
+scratch/

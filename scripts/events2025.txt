@@ -1,0 +1,971 @@
+2025.01.02 08:15:00   PROBE_OPEN | SHORT | p=0.89286 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.02 11:00:00   ADD | SHORT | p=0.89508 | lot=0.24 | 
+2025.01.02 19:15:00   CLOSE_BASKET | SHORT | p=0.89428 | lot=0.25 | reason=tp_10.0_pips net_pips=7.1
+2025.01.03 00:45:00   PROBE_OPEN | SHORT | p=0.89382 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.03 15:15:00   ADD | SHORT | p=0.89623 | lot=0.24 | 
+2025.01.03 21:30:00   ADD | SHORT | p=0.89855 | lot=0.36 | 
+2025.01.06 00:15:30   CLOSE_BASKET | SHORT | p=0.89809 | lot=0.61 | reason=tp_10.0_pips net_pips=-5.3
+2025.01.06 01:15:00   PROBE_OPEN | SHORT | p=0.89759 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.06 04:00:00   CLOSE_BASKET | SHORT | p=0.89687 | lot=0.01 | reason=tp_10.0_pips net_pips=7.2
+2025.01.06 08:45:00   PROBE_OPEN | SHORT | p=0.89692 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.06 13:30:00   ADD | SHORT | p=0.89947 | lot=0.24 | 
+2025.01.06 16:30:00   CLOSE_BASKET | SHORT | p=0.89733 | lot=0.25 | reason=tp_10.0_pips net_pips=20.4
+2025.01.07 02:45:00   PROBE_OPEN | SHORT | p=0.89559 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.07 10:30:00   ADD | SHORT | p=0.89800 | lot=0.24 | 
+2025.01.07 17:15:00   CLOSE_BASKET | SHORT | p=0.89690 | lot=0.25 | reason=tp_10.0_pips net_pips=10.0
+2025.01.08 02:00:00   PROBE_OPEN | SHORT | p=0.89535 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.08 02:45:00   CLOSE_BASKET | SHORT | p=0.89433 | lot=0.01 | reason=tp_10.0_pips net_pips=10.2
+2025.01.08 06:00:00   PROBE_OPEN | SHORT | p=0.89412 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.08 11:00:00   CLOSE_BASKET | SHORT | p=0.89331 | lot=0.01 | reason=tp_10.0_pips net_pips=8.1
+2025.01.08 16:00:00   PROBE_OPEN | SHORT | p=0.89288 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.09 02:45:00   CLOSE_BASKET | SHORT | p=0.89198 | lot=0.01 | reason=tp_10.0_pips net_pips=9.0
+2025.01.09 11:30:00   PROBE_OPEN | SHORT | p=0.89081 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.10 03:30:00   ADD | SHORT | p=0.89308 | lot=0.24 | 
+2025.01.10 06:45:00   CLOSE_BASKET | SHORT | p=0.89227 | lot=0.25 | reason=tp_10.0_pips net_pips=7.2
+2025.01.13 01:45:00   PROBE_OPEN | SHORT | p=0.88721 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.13 06:45:00   CLOSE_BASKET | SHORT | p=0.88588 | lot=0.01 | reason=tp_10.0_pips net_pips=13.3
+2025.01.13 09:15:00   PROBE_OPEN | SHORT | p=0.88672 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.13 11:30:00   CLOSE_BASKET | SHORT | p=0.88586 | lot=0.01 | reason=tp_10.0_pips net_pips=8.6
+2025.01.13 13:00:00   PROBE_OPEN | SHORT | p=0.88711 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.13 14:15:00   CLOSE_BASKET | SHORT | p=0.88625 | lot=0.01 | reason=tp_10.0_pips net_pips=8.6
+2025.01.13 17:45:00   PROBE_OPEN | SHORT | p=0.88660 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.14 01:30:00   ADD | SHORT | p=0.88918 | lot=0.24 | 
+2025.01.14 14:15:00   CLOSE_BASKET | SHORT | p=0.88826 | lot=0.25 | reason=tp_10.0_pips net_pips=8.2
+2025.01.14 16:15:00   PROBE_OPEN | SHORT | p=0.88915 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.14 19:00:00   CLOSE_BASKET | SHORT | p=0.88849 | lot=0.01 | reason=tp_10.0_pips net_pips=6.6
+2025.01.14 21:45:00   PROBE_OPEN | SHORT | p=0.88884 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.15 02:45:00   CLOSE_BASKET | SHORT | p=0.88799 | lot=0.01 | reason=tp_10.0_pips net_pips=8.5
+2025.01.15 04:45:00   PROBE_OPEN | SHORT | p=0.88820 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.15 15:45:00   ADD | SHORT | p=0.89172 | lot=0.24 | 
+2025.01.16 06:45:00   CLOSE_BASKET | SHORT | p=0.89084 | lot=0.25 | reason=tp_10.0_pips net_pips=7.4
+2025.01.16 09:15:00   PROBE_OPEN | SHORT | p=0.89164 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.16 17:15:00   ADD | SHORT | p=0.89381 | lot=0.24 | 
+2025.01.17 06:45:00   CLOSE_BASKET | SHORT | p=0.89267 | lot=0.25 | reason=tp_10.0_pips net_pips=10.5
+2025.01.17 09:00:00   PROBE_OPEN | SHORT | p=0.89358 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.17 15:00:00   CLOSE_BASKET | SHORT | p=0.89289 | lot=0.01 | reason=tp_10.0_pips net_pips=6.9
+2025.01.17 17:00:00   PROBE_OPEN | SHORT | p=0.89445 | lot=0.01 | gate_l=0 gate_s=1
+2025.01.17 22:30:00   ADD | SHORT | p=0.89670 | lot=0.24 | 
+2025.01.21 03:00:00   ADD | SHORT | p=0.89921 | lot=0.36 | 
+2025.01.22 10:00:00   CLOSE_BASKET | SHORT | p=0.89731 | lot=0.61 | reason=tp_10.0_pips net_pips=8.3
+2025.01.22 10:15:00   PROBE_OPEN | LONG | p=0.89749 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.22 11:00:00   CLOSE_BASKET | LONG | p=0.89866 | lot=0.01 | reason=tp_10.0_pips net_pips=11.7
+2025.01.22 18:15:00   PROBE_OPEN | LONG | p=0.90091 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.22 21:15:00   CLOSE_BASKET | LONG | p=0.90207 | lot=0.01 | reason=tp_10.0_pips net_pips=11.6
+2025.01.23 00:15:00   PROBE_OPEN | LONG | p=0.90263 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.23 11:00:00   ADD | LONG | p=0.90056 | lot=0.24 | 
+2025.01.23 12:30:00   CLOSE_BASKET | LONG | p=0.90184 | lot=0.25 | reason=tp_10.0_pips net_pips=12.0
+2025.01.23 17:15:00   PROBE_OPEN | LONG | p=0.90215 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.23 22:45:00   CLOSE_BASKET | LONG | p=0.90333 | lot=0.01 | reason=tp_10.0_pips net_pips=11.8
+2025.01.24 02:30:00   PROBE_OPEN | LONG | p=0.90321 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.24 04:15:00   CLOSE_BASKET | LONG | p=0.90452 | lot=0.01 | reason=tp_10.0_pips net_pips=13.1
+2025.01.24 12:15:00   PROBE_OPEN | LONG | p=0.90565 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.24 16:00:00   ADD | LONG | p=0.90327 | lot=0.24 | 
+2025.01.24 17:15:00   CLOSE_BASKET | LONG | p=0.90471 | lot=0.25 | reason=tp_10.0_pips net_pips=13.4
+2025.01.24 21:00:00   PROBE_OPEN | LONG | p=0.90563 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.27 15:15:00   ADD | LONG | p=0.90375 | lot=0.24 | 
+2025.01.28 02:00:00   ADD | LONG | p=0.90185 | lot=0.36 | 
+2025.01.28 06:15:00   ADD | LONG | p=0.89997 | lot=0.48 | 
+2025.01.29 02:45:00   ADD | LONG | p=0.89795 | lot=0.60 | 
+2025.01.31 07:15:00   CLOSE_BASKET | LONG | p=0.90137 | lot=1.69 | reason=tp_10.0_pips net_pips=11.5
+2025.01.31 09:15:00   PROBE_OPEN | LONG | p=0.90024 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.31 11:30:00   CLOSE_BASKET | LONG | p=0.90127 | lot=0.01 | reason=tp_10.0_pips net_pips=10.3
+2025.01.31 13:30:00   PROBE_OPEN | LONG | p=0.90030 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.31 16:15:00   CLOSE_BASKET | LONG | p=0.90257 | lot=0.01 | reason=tp_10.0_pips net_pips=22.7
+2025.01.31 19:30:00   PROBE_OPEN | LONG | p=0.90032 | lot=0.01 | gate_l=1 gate_s=0
+2025.01.31 20:30:00   CLOSE_BASKET | LONG | p=0.90131 | lot=0.01 | reason=tp_10.0_pips net_pips=9.9
+2025.02.03 02:15:00   PROBE_OPEN | LONG | p=0.90366 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.03 02:30:00   ADD | LONG | p=0.90173 | lot=0.24 | 
+2025.02.03 03:45:00   CLOSE_BASKET | LONG | p=0.90290 | lot=0.25 | reason=tp_10.0_pips net_pips=10.9
+2025.02.03 04:15:00   PROBE_OPEN | LONG | p=0.90008 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.03 04:30:00   CLOSE_BASKET | LONG | p=0.90125 | lot=0.01 | reason=tp_10.0_pips net_pips=11.7
+2025.02.03 04:45:00   PROBE_OPEN | LONG | p=0.90056 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.03 06:15:00   CLOSE_BASKET | LONG | p=0.90244 | lot=0.01 | reason=tp_10.0_pips net_pips=18.8
+2025.02.03 13:00:00   PROBE_OPEN | LONG | p=0.90181 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.03 15:15:00   CLOSE_BASKET | LONG | p=0.90315 | lot=0.01 | reason=tp_10.0_pips net_pips=13.4
+2025.02.03 17:00:00   PROBE_OPEN | LONG | p=0.90268 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.03 17:30:00   ADD | LONG | p=0.90083 | lot=0.24 | 
+2025.02.03 18:00:00   CLOSE_BASKET | LONG | p=0.90242 | lot=0.25 | reason=tp_10.0_pips net_pips=15.2
+2025.02.03 19:45:00   PROBE_OPEN | LONG | p=0.90107 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.03 23:45:00   ADD | LONG | p=0.89683 | lot=0.24 | 
+2025.02.04 15:30:00   ADD | LONG | p=0.89475 | lot=0.36 | 
+2025.02.04 20:15:00   CLOSE_BASKET | LONG | p=0.89695 | lot=0.61 | reason=tp_10.0_pips net_pips=12.8
+2025.02.04 20:30:00   PROBE_OPEN | SHORT | p=0.89690 | lot=0.01 | gate_l=0 gate_s=1
+2025.02.04 21:45:00   CLOSE_BASKET | SHORT | p=0.89579 | lot=0.01 | reason=tp_10.0_pips net_pips=11.1
+2025.02.05 01:45:00   PROBE_OPEN | SHORT | p=0.89584 | lot=0.01 | gate_l=0 gate_s=1
+2025.02.05 04:00:00   CLOSE_BASKET | SHORT | p=0.89500 | lot=0.01 | reason=tp_10.0_pips net_pips=8.4
+2025.02.05 05:15:00   PROBE_OPEN | SHORT | p=0.89568 | lot=0.01 | gate_l=0 gate_s=1
+2025.02.05 17:15:00   ADD | SHORT | p=0.89805 | lot=0.24 | 
+2025.02.05 22:30:00   ADD | SHORT | p=0.90032 | lot=0.36 | 
+2025.02.06 04:45:00   CLOSE_BASKET | SHORT | p=0.89859 | lot=0.61 | reason=tp_10.0_pips net_pips=7.6
+2025.02.06 05:00:00   PROBE_OPEN | LONG | p=0.89900 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.07 04:15:00   CLOSE_BASKET | LONG | p=0.90009 | lot=0.01 | reason=tp_10.0_pips net_pips=10.9
+2025.02.07 04:30:00   PROBE_OPEN | SHORT | p=0.89997 | lot=0.01 | gate_l=0 gate_s=1
+2025.02.07 15:30:00   CLOSE_BASKET | SHORT | p=0.89937 | lot=0.01 | reason=tp_10.0_pips net_pips=6.0
+2025.02.10 00:45:00   PROBE_OPEN | SHORT | p=0.89715 | lot=0.01 | gate_l=0 gate_s=1
+2025.02.10 07:30:00   ADD | SHORT | p=0.89957 | lot=0.24 | 
+2025.02.10 21:00:00   CLOSE_BASKET | SHORT | p=0.89863 | lot=0.25 | reason=tp_10.0_pips net_pips=8.4
+2025.02.11 04:45:00   PROBE_OPEN | LONG | p=0.89824 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.11 08:00:00   CLOSE_BASKET | LONG | p=0.89932 | lot=0.01 | reason=tp_10.0_pips net_pips=10.8
+2025.02.11 12:00:00   PROBE_OPEN | LONG | p=0.89980 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.12 13:45:00   ADD | LONG | p=0.89761 | lot=0.24 | 
+2025.02.12 15:45:00   ADD | LONG | p=0.89536 | lot=0.36 | 
+2025.02.12 19:00:00   CLOSE_BASKET | LONG | p=0.89774 | lot=0.61 | reason=tp_10.0_pips net_pips=14.2
+2025.02.12 23:00:00   PROBE_OPEN | LONG | p=0.89777 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.13 11:30:00   ADD | LONG | p=0.89579 | lot=0.24 | 
+2025.02.13 15:30:00   ADD | LONG | p=0.89374 | lot=0.36 | 
+2025.02.13 21:15:00   CLOSE_BASKET | LONG | p=0.89625 | lot=0.61 | reason=tp_10.0_pips net_pips=16.4
+2025.02.13 21:30:00   PROBE_OPEN | SHORT | p=0.89693 | lot=0.01 | gate_l=0 gate_s=1
+2025.02.14 14:45:00   ADD | SHORT | p=0.89915 | lot=0.24 | 
+2025.02.17 03:30:00   ADD | SHORT | p=0.90166 | lot=0.36 | 
+2025.02.20 06:00:00   ADD | SHORT | p=0.90411 | lot=0.48 | 
+2025.02.20 10:15:00   ADD | SHORT | p=0.90639 | lot=0.60 | 
+2025.02.25 13:00:00   CLOSE_BASKET | SHORT | p=0.90273 | lot=1.69 | reason=tp_10.0_pips net_pips=9.2
+2025.02.25 13:15:00   PROBE_OPEN | LONG | p=0.90298 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.25 14:15:00   CLOSE_BASKET | LONG | p=0.90398 | lot=0.01 | reason=tp_10.0_pips net_pips=10.0
+2025.02.25 17:15:00   PROBE_OPEN | LONG | p=0.90374 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.25 18:00:00   CLOSE_BASKET | LONG | p=0.90511 | lot=0.01 | reason=tp_10.0_pips net_pips=13.7
+2025.02.26 03:00:00   PROBE_OPEN | LONG | p=0.90740 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.26 13:30:00   ADD | LONG | p=0.90549 | lot=0.24 | 
+2025.02.26 18:15:00   CLOSE_BASKET | LONG | p=0.90665 | lot=0.25 | reason=tp_10.0_pips net_pips=10.8
+2025.02.26 20:00:00   PROBE_OPEN | LONG | p=0.90442 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.27 10:45:00   ADD | LONG | p=0.90245 | lot=0.24 | 
+2025.02.27 14:45:00   CLOSE_BASKET | LONG | p=0.90371 | lot=0.25 | reason=tp_10.0_pips net_pips=11.8
+2025.02.27 16:45:00   PROBE_OPEN | LONG | p=0.90276 | lot=0.01 | gate_l=1 gate_s=0
+2025.02.27 23:00:00   ADD | LONG | p=0.90082 | lot=0.24 | 
+2025.02.28 04:00:00   ADD | LONG | p=0.89875 | lot=0.36 | 
+2025.02.28 15:30:00   ADD | LONG | p=0.89615 | lot=0.48 | 
+2025.03.03 16:30:00   CLOSE_BASKET | LONG | p=0.89941 | lot=1.09 | reason=tp_10.0_pips net_pips=13.1
+2025.03.03 16:45:00   PROBE_OPEN | SHORT | p=0.89928 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.03 22:00:00   ADD | SHORT | p=0.90200 | lot=0.24 | 
+2025.03.04 00:15:00   CLOSE_BASKET | SHORT | p=0.90220 | lot=0.25 | reason=tp_10.0_pips net_pips=-3.1
+2025.03.04 02:00:00   PROBE_OPEN | LONG | p=0.90106 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.04 06:15:00   ADD | LONG | p=0.89884 | lot=0.24 | 
+2025.03.04 10:45:00   ADD | LONG | p=0.89691 | lot=0.36 | 
+2025.03.04 14:15:00   CLOSE_BASKET | LONG | p=0.89918 | lot=0.61 | reason=tp_10.0_pips net_pips=14.4
+2025.03.04 17:00:00   PROBE_OPEN | LONG | p=0.89904 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.04 18:45:00   CLOSE_BASKET | LONG | p=0.90049 | lot=0.01 | reason=tp_10.0_pips net_pips=14.5
+2025.03.04 23:15:00   PROBE_OPEN | LONG | p=0.90306 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.05 05:00:00   ADD | LONG | p=0.90098 | lot=0.24 | 
+2025.03.05 08:15:00   CLOSE_BASKET | LONG | p=0.90237 | lot=0.25 | reason=tp_10.0_pips net_pips=13.1
+2025.03.05 13:30:00   PROBE_OPEN | LONG | p=0.90316 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.05 14:15:00   CLOSE_BASKET | LONG | p=0.90453 | lot=0.01 | reason=tp_10.0_pips net_pips=13.7
+2025.03.06 00:30:30   PROBE_OPEN | LONG | p=0.90862 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.06 10:30:00   CLOSE_BASKET | LONG | p=0.90985 | lot=0.01 | reason=tp_10.0_pips net_pips=12.3
+2025.03.06 11:30:00   PROBE_OPEN | LONG | p=0.90823 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.06 14:00:00   CLOSE_BASKET | LONG | p=0.90967 | lot=0.01 | reason=tp_10.0_pips net_pips=14.4
+2025.03.06 17:00:00   PROBE_OPEN | LONG | p=0.90930 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.06 17:15:00   ADD | LONG | p=0.90685 | lot=0.24 | 
+2025.03.07 00:15:00   ADD | LONG | p=0.90569 | lot=0.36 | 
+2025.03.07 03:30:00   ADD | LONG | p=0.90382 | lot=0.48 | 
+2025.03.07 07:45:00   ADD | LONG | p=0.90185 | lot=0.60 | 
+2025.03.07 17:15:00   CLOSE_BASKET | LONG | p=0.90504 | lot=1.69 | reason=tp_10.0_pips net_pips=10.6
+2025.03.10 01:00:00   PROBE_OPEN | LONG | p=0.90599 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.10 04:00:00   CLOSE_BASKET | LONG | p=0.90703 | lot=0.01 | reason=tp_10.0_pips net_pips=10.4
+2025.03.10 05:15:00   PROBE_OPEN | LONG | p=0.90576 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.10 07:45:00   CLOSE_BASKET | LONG | p=0.90680 | lot=0.01 | reason=tp_10.0_pips net_pips=10.4
+2025.03.10 16:45:00   PROBE_OPEN | LONG | p=0.90988 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.10 20:30:00   ADD | LONG | p=0.90776 | lot=0.24 | 
+2025.03.10 23:30:00   ADD | LONG | p=0.90657 | lot=0.36 | 
+2025.03.11 03:15:00   ADD | LONG | p=0.90470 | lot=0.48 | 
+2025.03.11 16:00:00   CLOSE_BASKET | LONG | p=0.90709 | lot=1.09 | reason=tp_10.0_pips net_pips=10.5
+2025.03.11 21:00:00   PROBE_OPEN | LONG | p=0.90845 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.12 09:30:00   CLOSE_BASKET | LONG | p=0.90998 | lot=0.01 | reason=tp_10.0_pips net_pips=15.3
+2025.03.12 12:00:00   PROBE_OPEN | LONG | p=0.90808 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.12 14:00:00   ADD | LONG | p=0.90614 | lot=0.24 | 
+2025.03.12 17:45:00   CLOSE_BASKET | LONG | p=0.90740 | lot=0.25 | reason=tp_10.0_pips net_pips=11.8
+2025.03.12 20:45:00   PROBE_OPEN | LONG | p=0.90672 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.12 21:30:00   CLOSE_BASKET | LONG | p=0.90777 | lot=0.01 | reason=tp_10.0_pips net_pips=10.5
+2025.03.13 06:00:00   PROBE_OPEN | LONG | p=0.90851 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.13 08:45:00   ADD | LONG | p=0.90657 | lot=0.24 | 
+2025.03.13 11:30:00   ADD | LONG | p=0.90450 | lot=0.36 | 
+2025.03.13 15:15:00   ADD | LONG | p=0.90267 | lot=0.48 | 
+2025.03.13 17:00:00   CLOSE_BASKET | LONG | p=0.90538 | lot=1.09 | reason=tp_10.0_pips net_pips=11.9
+2025.03.14 02:30:00   PROBE_OPEN | LONG | p=0.90657 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.14 03:45:00   CLOSE_BASKET | LONG | p=0.90781 | lot=0.01 | reason=tp_10.0_pips net_pips=12.4
+2025.03.14 16:00:00   PROBE_OPEN | LONG | p=0.90914 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.17 03:30:00   CLOSE_BASKET | LONG | p=0.91027 | lot=0.01 | reason=tp_10.0_pips net_pips=11.3
+2025.03.17 05:30:00   PROBE_OPEN | LONG | p=0.90963 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.17 10:45:00   CLOSE_BASKET | LONG | p=0.91074 | lot=0.01 | reason=tp_10.0_pips net_pips=11.1
+2025.03.17 14:30:00   PROBE_OPEN | LONG | p=0.91063 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.17 19:00:00   CLOSE_BASKET | LONG | p=0.91168 | lot=0.01 | reason=tp_10.0_pips net_pips=10.5
+2025.03.17 23:15:30   PROBE_OPEN | LONG | p=0.91258 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.18 13:15:00   ADD | LONG | p=0.91074 | lot=0.24 | 
+2025.03.18 15:45:00   ADD | LONG | p=0.90860 | lot=0.36 | 
+2025.03.19 10:45:00   ADD | LONG | p=0.90663 | lot=0.48 | 
+2025.03.19 20:45:00   CLOSE_BASKET | LONG | p=0.90946 | lot=1.09 | reason=tp_10.0_pips net_pips=12.2
+2025.03.20 02:45:00   PROBE_OPEN | LONG | p=0.90805 | lot=0.01 | gate_l=1 gate_s=0
+2025.03.20 09:45:00   ADD | LONG | p=0.90587 | lot=0.24 | 
+2025.03.20 14:00:00   ADD | LONG | p=0.90389 | lot=0.36 | 
+2025.03.20 19:15:00   ADD | LONG | p=0.90153 | lot=0.48 | 
+2025.03.21 18:00:00   ADD | LONG | p=0.89943 | lot=0.60 | 
+2025.03.24 18:00:00   ADD | LONG | p=0.89755 | lot=0.72 | 
+2025.03.25 12:15:00   CLOSE_BASKET | LONG | p=0.90163 | lot=2.41 | reason=tp_10.0_pips net_pips=10.0
+2025.03.25 12:30:00   PROBE_OPEN | SHORT | p=0.90161 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.25 21:00:00   CLOSE_BASKET | SHORT | p=0.90070 | lot=0.01 | reason=tp_10.0_pips net_pips=9.1
+2025.03.26 02:15:00   PROBE_OPEN | SHORT | p=0.90024 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.26 02:45:00   CLOSE_BASKET | SHORT | p=0.89933 | lot=0.01 | reason=tp_10.0_pips net_pips=9.1
+2025.03.26 04:45:00   PROBE_OPEN | SHORT | p=0.89973 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.26 15:45:00   CLOSE_BASKET | SHORT | p=0.89900 | lot=0.01 | reason=tp_10.0_pips net_pips=7.3
+2025.03.26 23:45:00   PROBE_OPEN | SHORT | p=0.89938 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.27 01:00:00   CLOSE_BASKET | SHORT | p=0.89859 | lot=0.01 | reason=tp_10.0_pips net_pips=7.9
+2025.03.27 02:15:00   PROBE_OPEN | SHORT | p=0.89875 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.27 08:30:00   ADD | SHORT | p=0.90095 | lot=0.24 | 
+2025.03.28 05:15:00   CLOSE_BASKET | SHORT | p=0.90016 | lot=0.25 | reason=tp_10.0_pips net_pips=7.0
+2025.03.28 08:30:00   PROBE_OPEN | SHORT | p=0.90000 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.28 15:45:00   ADD | SHORT | p=0.90240 | lot=0.24 | 
+2025.03.28 16:45:00   CLOSE_BASKET | SHORT | p=0.90123 | lot=0.25 | reason=tp_10.0_pips net_pips=10.7
+2025.03.28 21:30:00   PROBE_OPEN | SHORT | p=0.90014 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.31 00:15:00   CLOSE_BASKET | SHORT | p=0.90090 | lot=0.01 | reason=tp_10.0_pips net_pips=-7.6
+2025.03.31 03:45:00   PROBE_OPEN | SHORT | p=0.89909 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.31 11:15:00   CLOSE_BASKET | SHORT | p=0.89797 | lot=0.01 | reason=tp_10.0_pips net_pips=11.2
+2025.03.31 19:15:00   PROBE_OPEN | SHORT | p=0.89676 | lot=0.01 | gate_l=0 gate_s=1
+2025.03.31 23:00:00   ADD | SHORT | p=0.89899 | lot=0.24 | 
+2025.04.01 03:00:00   CLOSE_BASKET | SHORT | p=0.89809 | lot=0.25 | reason=tp_10.0_pips net_pips=8.1
+2025.04.01 05:15:00   PROBE_OPEN | SHORT | p=0.89868 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.01 16:45:00   ADD | SHORT | p=0.90085 | lot=0.24 | 
+2025.04.01 17:00:00   CLOSE_BASKET | SHORT | p=0.90008 | lot=0.25 | reason=tp_10.0_pips net_pips=6.8
+2025.04.01 17:15:00   PROBE_OPEN | SHORT | p=0.90047 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.01 18:00:00   CLOSE_BASKET | SHORT | p=0.89914 | lot=0.01 | reason=tp_10.0_pips net_pips=13.3
+2025.04.02 01:30:00   PROBE_OPEN | SHORT | p=0.89809 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.02 06:00:00   ADD | SHORT | p=0.90032 | lot=0.24 | 
+2025.04.02 12:45:00   ADD | SHORT | p=0.90282 | lot=0.36 | 
+2025.04.02 23:30:00   CLOSE_BASKET | SHORT | p=0.90073 | lot=0.61 | reason=tp_10.0_pips net_pips=10.3
+2025.04.03 08:30:00   PROBE_OPEN | SHORT | p=0.89442 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.03 10:45:00   CLOSE_BASKET | SHORT | p=0.89378 | lot=0.01 | reason=tp_10.0_pips net_pips=6.4
+2025.04.03 12:00:00   PROBE_OPEN | SHORT | p=0.89507 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.03 12:45:00   ADD | SHORT | p=0.89771 | lot=0.24 | 
+2025.04.03 13:45:00   CLOSE_BASKET | SHORT | p=0.89625 | lot=0.25 | reason=tp_10.0_pips net_pips=13.5
+2025.04.03 16:15:00   PROBE_OPEN | SHORT | p=0.89749 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.03 16:30:00   CLOSE_BASKET | SHORT | p=0.89662 | lot=0.01 | reason=tp_10.0_pips net_pips=8.7
+2025.04.04 22:45:00   PROBE_OPEN | SHORT | p=0.86072 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.04 23:00:00   CLOSE_BASKET | SHORT | p=0.85933 | lot=0.01 | reason=tp_10.0_pips net_pips=13.9
+2025.04.04 23:45:00   PROBE_OPEN | SHORT | p=0.86001 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.07 00:15:00   CLOSE_BASKET | SHORT | p=0.85602 | lot=0.01 | reason=tp_10.0_pips net_pips=39.9
+2025.04.07 04:30:00   PROBE_OPEN | SHORT | p=0.85534 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.07 04:45:00   CLOSE_BASKET | SHORT | p=0.85433 | lot=0.01 | reason=tp_10.0_pips net_pips=10.1
+2025.04.07 05:00:00   PROBE_OPEN | SHORT | p=0.85543 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.07 06:30:00   ADD | SHORT | p=0.85792 | lot=0.24 | 
+2025.04.07 07:30:00   CLOSE_BASKET | SHORT | p=0.85626 | lot=0.25 | reason=tp_10.0_pips net_pips=15.6
+2025.04.07 10:15:00   PROBE_OPEN | SHORT | p=0.85659 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.07 10:45:00   CLOSE_BASKET | SHORT | p=0.85553 | lot=0.01 | reason=tp_10.0_pips net_pips=10.6
+2025.04.07 11:30:00   PROBE_OPEN | SHORT | p=0.85636 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.07 12:00:00   CLOSE_BASKET | SHORT | p=0.85538 | lot=0.01 | reason=tp_10.0_pips net_pips=9.8
+2025.04.07 12:45:00   PROBE_OPEN | SHORT | p=0.85738 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.07 13:30:00   ADD | SHORT | p=0.86078 | lot=0.24 | 
+2025.04.07 15:30:00   ADD | SHORT | p=0.86472 | lot=0.36 | 
+2025.04.07 16:45:00   CLOSE_BASKET | SHORT | p=0.86158 | lot=0.61 | reason=tp_10.0_pips net_pips=14.7
+2025.04.07 23:15:00   PROBE_OPEN | SHORT | p=0.85268 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.08 00:15:30   CLOSE_BASKET | SHORT | p=0.85307 | lot=0.01 | reason=tp_10.0_pips net_pips=-3.9
+2025.04.08 00:45:00   PROBE_OPEN | SHORT | p=0.85253 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.08 03:15:00   ADD | SHORT | p=0.85472 | lot=0.24 | 
+2025.04.08 04:00:00   CLOSE_BASKET | SHORT | p=0.85224 | lot=0.25 | reason=tp_10.0_pips net_pips=23.9
+2025.04.08 05:30:00   PROBE_OPEN | SHORT | p=0.85427 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.08 06:00:00   CLOSE_BASKET | SHORT | p=0.85356 | lot=0.01 | reason=tp_10.0_pips net_pips=7.1
+2025.04.08 06:15:00   PROBE_OPEN | SHORT | p=0.85378 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.08 07:15:00   ADD | SHORT | p=0.85641 | lot=0.24 | 
+2025.04.08 09:00:00   ADD | SHORT | p=0.85921 | lot=0.36 | 
+2025.04.08 14:30:00   CLOSE_BASKET | SHORT | p=0.85724 | lot=0.61 | reason=tp_10.0_pips net_pips=7.8
+2025.04.08 15:45:00   PROBE_OPEN | SHORT | p=0.85854 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.08 16:15:00   ADD | SHORT | p=0.86076 | lot=0.24 | 
+2025.04.08 16:45:00   CLOSE_BASKET | SHORT | p=0.85922 | lot=0.25 | reason=tp_10.0_pips net_pips=14.5
+2025.04.08 17:00:00   PROBE_OPEN | SHORT | p=0.85971 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.08 17:30:00   CLOSE_BASKET | SHORT | p=0.85809 | lot=0.01 | reason=tp_10.0_pips net_pips=16.2
+2025.04.09 04:30:00   PROBE_OPEN | SHORT | p=0.85008 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.09 07:15:00   CLOSE_BASKET | SHORT | p=0.84899 | lot=0.01 | reason=tp_10.0_pips net_pips=10.9
+2025.04.09 09:30:00   PROBE_OPEN | SHORT | p=0.85062 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.09 10:30:00   ADD | SHORT | p=0.85474 | lot=0.24 | 
+2025.04.09 11:30:00   CLOSE_BASKET | SHORT | p=0.85376 | lot=0.25 | reason=tp_10.0_pips net_pips=8.2
+2025.04.09 11:45:00   PROBE_OPEN | SHORT | p=0.85323 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.09 13:30:00   ADD | SHORT | p=0.85567 | lot=0.24 | 
+2025.04.09 14:15:00   CLOSE_BASKET | SHORT | p=0.85356 | lot=0.25 | reason=tp_10.0_pips net_pips=20.1
+2025.04.09 16:15:00   PROBE_OPEN | SHORT | p=0.85602 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.09 17:15:00   CLOSE_BASKET | SHORT | p=0.85467 | lot=0.01 | reason=tp_10.0_pips net_pips=13.5
+2025.04.09 20:15:00   PROBE_OPEN | SHORT | p=0.85447 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.09 20:30:00   ADD | SHORT | p=0.86047 | lot=0.24 | 
+2025.04.09 20:45:00   ADD | SHORT | p=0.86354 | lot=0.36 | 
+2025.04.09 21:30:00   ADD | SHORT | p=0.86784 | lot=0.48 | 
+2025.04.10 03:45:00   CLOSE_BASKET | SHORT | p=0.86405 | lot=1.09 | reason=tp_10.0_pips net_pips=6.2
+2025.04.10 05:30:00   PROBE_OPEN | SHORT | p=0.86681 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.10 07:00:00   ADD | SHORT | p=0.86914 | lot=0.24 | 
+2025.04.10 09:00:00   ADD | SHORT | p=0.87150 | lot=0.36 | 
+2025.04.10 10:15:00   CLOSE_BASKET | SHORT | p=0.86960 | lot=0.61 | reason=tp_10.0_pips net_pips=8.9
+2025.04.10 13:30:00   PROBE_OPEN | SHORT | p=0.86926 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.10 14:15:00   CLOSE_BASKET | SHORT | p=0.86846 | lot=0.01 | reason=tp_10.0_pips net_pips=8.0
+2025.04.10 14:30:00   PROBE_OPEN | SHORT | p=0.86890 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.10 15:15:00   ADD | SHORT | p=0.87153 | lot=0.24 | 
+2025.04.10 15:30:00   CLOSE_BASKET | SHORT | p=0.87026 | lot=0.25 | reason=tp_10.0_pips net_pips=11.6
+2025.04.10 15:45:00   PROBE_OPEN | SHORT | p=0.86937 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.10 17:00:00   CLOSE_BASKET | SHORT | p=0.86861 | lot=0.01 | reason=tp_10.0_pips net_pips=7.6
+2025.04.10 18:00:00   PROBE_OPEN | SHORT | p=0.87391 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.10 18:15:00   CLOSE_BASKET | SHORT | p=0.87274 | lot=0.01 | reason=tp_10.0_pips net_pips=11.7
+2025.04.10 18:30:00   PROBE_OPEN | SHORT | p=0.87120 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.10 18:45:00   CLOSE_BASKET | SHORT | p=0.87051 | lot=0.01 | reason=tp_10.0_pips net_pips=6.9
+2025.04.10 21:30:00   PROBE_OPEN | SHORT | p=0.87171 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.10 22:15:00   CLOSE_BASKET | SHORT | p=0.87085 | lot=0.01 | reason=tp_10.0_pips net_pips=8.6
+2025.04.11 04:30:00   PROBE_OPEN | SHORT | p=0.86858 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.11 05:45:00   ADD | SHORT | p=0.87126 | lot=0.24 | 
+2025.04.11 06:00:00   CLOSE_BASKET | SHORT | p=0.87043 | lot=0.25 | reason=tp_10.0_pips net_pips=7.2
+2025.04.11 06:15:00   PROBE_OPEN | SHORT | p=0.86892 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.11 07:45:00   CLOSE_BASKET | SHORT | p=0.86694 | lot=0.01 | reason=tp_10.0_pips net_pips=19.8
+2025.04.11 14:00:00   PROBE_OPEN | SHORT | p=0.86665 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.11 15:15:00   CLOSE_BASKET | SHORT | p=0.86453 | lot=0.01 | reason=tp_10.0_pips net_pips=21.2
+2025.04.11 16:00:00   PROBE_OPEN | SHORT | p=0.86728 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.11 17:00:00   CLOSE_BASKET | SHORT | p=0.86510 | lot=0.01 | reason=tp_10.0_pips net_pips=21.8
+2025.04.11 17:45:00   PROBE_OPEN | SHORT | p=0.86798 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.11 18:00:00   CLOSE_BASKET | SHORT | p=0.86622 | lot=0.01 | reason=tp_10.0_pips net_pips=17.6
+2025.04.11 19:15:00   PROBE_OPEN | SHORT | p=0.86817 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.11 20:45:00   ADD | SHORT | p=0.87137 | lot=0.24 | 
+2025.04.11 22:30:00   ADD | SHORT | p=0.87379 | lot=0.36 | 
+2025.04.14 00:00:00   CLOSE_BASKET | SHORT | p=0.87440 | lot=0.61 | reason=tp_10.0_pips net_pips=-16.5
+2025.04.14 00:15:30   PROBE_OPEN | SHORT | p=0.87287 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.14 01:15:00   CLOSE_BASKET | SHORT | p=0.87199 | lot=0.01 | reason=tp_10.0_pips net_pips=8.8
+2025.04.14 01:30:00   PROBE_OPEN | SHORT | p=0.87199 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.14 03:15:00   ADD | SHORT | p=0.87438 | lot=0.24 | 
+2025.04.14 03:30:00   CLOSE_BASKET | SHORT | p=0.87350 | lot=0.25 | reason=tp_10.0_pips net_pips=7.8
+2025.04.14 03:45:00   PROBE_OPEN | SHORT | p=0.87349 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.14 05:00:00   CLOSE_BASKET | SHORT | p=0.87258 | lot=0.01 | reason=tp_10.0_pips net_pips=9.1
+2025.04.14 06:00:00   PROBE_OPEN | SHORT | p=0.87271 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.14 06:15:00   CLOSE_BASKET | SHORT | p=0.87201 | lot=0.01 | reason=tp_10.0_pips net_pips=7.0
+2025.04.14 07:30:00   PROBE_OPEN | SHORT | p=0.87257 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.14 09:30:00   ADD | SHORT | p=0.87481 | lot=0.24 | 
+2025.04.14 11:30:00   ADD | SHORT | p=0.87708 | lot=0.36 | 
+2025.04.14 15:00:00   CLOSE_BASKET | SHORT | p=0.87541 | lot=0.61 | reason=tp_10.0_pips net_pips=7.0
+2025.04.14 15:15:00   PROBE_OPEN | SHORT | p=0.87531 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.14 16:00:00   CLOSE_BASKET | SHORT | p=0.87415 | lot=0.01 | reason=tp_10.0_pips net_pips=11.6
+2025.04.14 17:15:00   PROBE_OPEN | SHORT | p=0.87496 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.14 18:30:00   ADD | SHORT | p=0.87727 | lot=0.24 | 
+2025.04.15 04:30:00   ADD | SHORT | p=0.88042 | lot=0.36 | 
+2025.04.15 07:45:00   ADD | SHORT | p=0.88288 | lot=0.48 | 
+2025.04.15 12:00:00   CLOSE_BASKET | SHORT | p=0.87999 | lot=1.09 | reason=tp_10.0_pips net_pips=7.7
+2025.04.15 13:45:00   PROBE_OPEN | SHORT | p=0.88112 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.15 15:30:00   ADD | SHORT | p=0.88431 | lot=0.24 | 
+2025.04.15 18:30:00   ADD | SHORT | p=0.88694 | lot=0.36 | 
+2025.04.16 00:15:00   CLOSE_BASKET | SHORT | p=0.88676 | lot=0.61 | reason=tp_10.0_pips net_pips=-9.5
+2025.04.16 00:30:00   PROBE_OPEN | LONG | p=0.88628 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.16 01:00:00   ADD | LONG | p=0.88457 | lot=0.24 | 
+2025.04.16 05:15:00   CLOSE_BASKET | LONG | p=0.88608 | lot=0.25 | reason=tp_10.0_pips net_pips=14.4
+2025.04.16 10:45:00   PROBE_OPEN | LONG | p=0.88401 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.16 11:45:00   CLOSE_BASKET | LONG | p=0.88650 | lot=0.01 | reason=tp_10.0_pips net_pips=24.9
+2025.04.16 17:00:00   PROBE_OPEN | LONG | p=0.88522 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.16 19:00:00   CLOSE_BASKET | LONG | p=0.88640 | lot=0.01 | reason=tp_10.0_pips net_pips=11.8
+2025.04.16 21:00:00   PROBE_OPEN | LONG | p=0.88367 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.17 04:30:00   ADD | LONG | p=0.88161 | lot=0.24 | 
+2025.04.17 13:15:00   CLOSE_BASKET | LONG | p=0.88287 | lot=0.25 | reason=tp_10.0_pips net_pips=11.8
+2025.04.17 13:30:00   PROBE_OPEN | SHORT | p=0.88263 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.17 16:00:00   ADD | SHORT | p=0.88510 | lot=0.24 | 
+2025.04.17 17:45:00   CLOSE_BASKET | SHORT | p=0.88412 | lot=0.25 | reason=tp_10.0_pips net_pips=8.8
+2025.04.17 18:15:00   PROBE_OPEN | SHORT | p=0.88411 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.17 20:45:00   CLOSE_BASKET | SHORT | p=0.88333 | lot=0.01 | reason=tp_10.0_pips net_pips=7.8
+2025.04.17 21:30:00   PROBE_OPEN | SHORT | p=0.88376 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.18 00:45:00   CLOSE_BASKET | SHORT | p=0.88452 | lot=0.01 | reason=tp_10.0_pips net_pips=-7.6
+2025.04.18 01:00:00   PROBE_OPEN | LONG | p=0.88475 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.18 01:30:00   ADD | LONG | p=0.88420 | lot=0.24 | 
+2025.04.18 23:45:30   ADD | LONG | p=0.88288 | lot=0.36 | 
+2025.04.21 06:45:00   CLOSE_BASKET | LONG | p=0.88561 | lot=0.61 | reason=tp_10.0_pips net_pips=21.8
+2025.04.21 07:00:00   PROBE_OPEN | SHORT | p=0.88616 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.21 07:30:00   CLOSE_BASKET | SHORT | p=0.88516 | lot=0.01 | reason=tp_10.0_pips net_pips=10.0
+2025.04.21 07:45:00   PROBE_OPEN | SHORT | p=0.88483 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.21 11:00:00   ADD | SHORT | p=0.88755 | lot=0.24 | 
+2025.04.21 12:30:00   CLOSE_BASKET | SHORT | p=0.88659 | lot=0.25 | reason=tp_10.0_pips net_pips=8.5
+2025.04.21 12:45:00   PROBE_OPEN | SHORT | p=0.88675 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.21 15:30:00   CLOSE_BASKET | SHORT | p=0.88582 | lot=0.01 | reason=tp_10.0_pips net_pips=9.3
+2025.04.21 15:45:00   PROBE_OPEN | SHORT | p=0.88619 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.22 06:15:00   ADD | SHORT | p=0.88855 | lot=0.24 | 
+2025.04.22 08:15:00   CLOSE_BASKET | SHORT | p=0.88769 | lot=0.25 | reason=tp_10.0_pips net_pips=7.7
+2025.04.22 08:45:00   PROBE_OPEN | LONG | p=0.88706 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.22 09:30:00   CLOSE_BASKET | LONG | p=0.88839 | lot=0.01 | reason=tp_10.0_pips net_pips=13.3
+2025.04.22 10:00:00   PROBE_OPEN | LONG | p=0.88734 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.22 14:45:00   ADD | LONG | p=0.88530 | lot=0.24 | 
+2025.04.22 18:30:00   ADD | LONG | p=0.88273 | lot=0.36 | 
+2025.04.22 22:00:00   ADD | LONG | p=0.88083 | lot=0.48 | 
+2025.04.23 00:00:00   ADD | LONG | p=0.88036 | lot=0.60 | 
+2025.04.23 03:15:00   CLOSE_BASKET | LONG | p=0.88291 | lot=1.69 | reason=tp_10.0_pips net_pips=11.7
+2025.04.23 03:30:00   PROBE_OPEN | SHORT | p=0.88283 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.23 09:15:00   ADD | SHORT | p=0.88613 | lot=0.24 | 
+2025.04.23 11:45:00   CLOSE_BASKET | SHORT | p=0.88482 | lot=0.25 | reason=tp_10.0_pips net_pips=11.8
+2025.04.23 12:00:00   PROBE_OPEN | SHORT | p=0.88528 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.23 16:45:00   ADD | SHORT | p=0.88783 | lot=0.24 | 
+2025.04.23 18:15:00   CLOSE_BASKET | SHORT | p=0.88663 | lot=0.25 | reason=tp_10.0_pips net_pips=11.0
+2025.04.24 09:45:00   PROBE_OPEN | SHORT | p=0.88226 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.24 14:15:00   ADD | SHORT | p=0.88466 | lot=0.24 | 
+2025.04.24 15:00:00   CLOSE_BASKET | SHORT | p=0.88386 | lot=0.25 | reason=tp_10.0_pips net_pips=7.0
+2025.04.24 15:15:00   PROBE_OPEN | SHORT | p=0.88441 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.24 17:45:00   ADD | SHORT | p=0.88764 | lot=0.24 | 
+2025.04.25 00:45:00   CLOSE_BASKET | SHORT | p=0.88778 | lot=0.25 | reason=tp_10.0_pips net_pips=-2.7
+2025.04.25 01:00:00   PROBE_OPEN | LONG | p=0.88698 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.25 06:30:00   CLOSE_BASKET | LONG | p=0.88883 | lot=0.01 | reason=tp_10.0_pips net_pips=18.5
+2025.04.25 09:15:00   PROBE_OPEN | LONG | p=0.88715 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.25 15:00:00   ADD | LONG | p=0.88522 | lot=0.24 | 
+2025.04.25 19:30:00   CLOSE_BASKET | LONG | p=0.88677 | lot=0.25 | reason=tp_10.0_pips net_pips=14.7
+2025.04.25 23:45:00   PROBE_OPEN | LONG | p=0.88640 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.28 08:00:00   CLOSE_BASKET | LONG | p=0.88758 | lot=0.01 | reason=tp_10.0_pips net_pips=11.8
+2025.04.28 10:00:00   PROBE_OPEN | LONG | p=0.88647 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.28 11:00:00   ADD | LONG | p=0.88448 | lot=0.24 | 
+2025.04.28 12:00:00   CLOSE_BASKET | LONG | p=0.88565 | lot=0.25 | reason=tp_10.0_pips net_pips=10.9
+2025.04.29 00:30:00   PROBE_OPEN | LONG | p=0.88954 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.29 05:15:00   CLOSE_BASKET | LONG | p=0.89087 | lot=0.01 | reason=tp_10.0_pips net_pips=13.3
+2025.04.29 07:15:00   PROBE_OPEN | LONG | p=0.88899 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.29 14:00:00   ADD | LONG | p=0.88624 | lot=0.24 | 
+2025.04.29 15:45:00   CLOSE_BASKET | LONG | p=0.88751 | lot=0.25 | reason=tp_10.0_pips net_pips=11.6
+2025.04.29 16:15:00   PROBE_OPEN | LONG | p=0.88570 | lot=0.01 | gate_l=1 gate_s=0
+2025.04.29 22:45:00   ADD | LONG | p=0.88353 | lot=0.24 | 
+2025.04.30 04:45:00   CLOSE_BASKET | LONG | p=0.88495 | lot=0.25 | reason=tp_10.0_pips net_pips=13.3
+2025.04.30 05:00:00   PROBE_OPEN | SHORT | p=0.88526 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.30 11:00:00   CLOSE_BASKET | SHORT | p=0.88450 | lot=0.01 | reason=tp_10.0_pips net_pips=7.6
+2025.04.30 18:00:00   PROBE_OPEN | SHORT | p=0.88352 | lot=0.01 | gate_l=0 gate_s=1
+2025.04.30 21:00:00   CLOSE_BASKET | SHORT | p=0.88261 | lot=0.01 | reason=tp_10.0_pips net_pips=9.1
+2025.04.30 23:30:00   PROBE_OPEN | SHORT | p=0.88288 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.01 05:45:00   ADD | SHORT | p=0.88520 | lot=0.24 | 
+2025.05.01 06:15:00   CLOSE_BASKET | SHORT | p=0.88422 | lot=0.25 | reason=tp_10.0_pips net_pips=8.9
+2025.05.01 13:45:00   PROBE_OPEN | SHORT | p=0.88228 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.01 16:45:00   CLOSE_BASKET | SHORT | p=0.88149 | lot=0.01 | reason=tp_10.0_pips net_pips=7.9
+2025.05.01 18:00:00   PROBE_OPEN | SHORT | p=0.88321 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.01 19:00:00   CLOSE_BASKET | SHORT | p=0.88238 | lot=0.01 | reason=tp_10.0_pips net_pips=8.3
+2025.05.01 20:15:00   PROBE_OPEN | SHORT | p=0.88275 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.02 03:30:00   ADD | SHORT | p=0.88589 | lot=0.24 | 
+2025.05.02 12:45:00   ADD | SHORT | p=0.88936 | lot=0.36 | 
+2025.05.05 02:00:00   ADD | SHORT | p=0.89201 | lot=0.48 | 
+2025.05.05 11:30:00   ADD | SHORT | p=0.89431 | lot=0.60 | 
+2025.05.07 01:30:00   ADD | SHORT | p=0.89695 | lot=0.72 | 
+2025.05.07 16:15:00   CLOSE_BASKET | SHORT | p=0.89220 | lot=2.41 | reason=tp_10.0_pips net_pips=8.1
+2025.05.07 16:30:00   PROBE_OPEN | LONG | p=0.89174 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.07 22:15:00   ADD | LONG | p=0.88882 | lot=0.24 | 
+2025.05.08 04:00:00   CLOSE_BASKET | LONG | p=0.89028 | lot=0.25 | reason=tp_10.0_pips net_pips=13.4
+2025.05.08 08:15:00   PROBE_OPEN | LONG | p=0.89157 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.08 09:45:00   ADD | LONG | p=0.88937 | lot=0.24 | 
+2025.05.08 13:30:00   CLOSE_BASKET | LONG | p=0.89127 | lot=0.25 | reason=tp_10.0_pips net_pips=18.1
+2025.05.08 21:30:00   PROBE_OPEN | LONG | p=0.89124 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.09 05:15:00   ADD | LONG | p=0.88903 | lot=0.24 | 
+2025.05.09 06:00:00   CLOSE_BASKET | LONG | p=0.89043 | lot=0.25 | reason=tp_10.0_pips net_pips=13.1
+2025.05.09 11:30:00   PROBE_OPEN | LONG | p=0.89106 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.09 16:15:00   CLOSE_BASKET | LONG | p=0.89246 | lot=0.01 | reason=tp_10.0_pips net_pips=14.0
+2025.05.09 22:00:00   PROBE_OPEN | LONG | p=0.89337 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.12 00:15:00   ADD | LONG | p=0.89328 | lot=0.24 | 
+2025.05.12 01:15:00   CLOSE_BASKET | LONG | p=0.89519 | lot=0.25 | reason=tp_10.0_pips net_pips=19.1
+2025.05.12 10:45:00   PROBE_OPEN | LONG | p=0.89392 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.12 12:30:00   CLOSE_BASKET | LONG | p=0.89531 | lot=0.01 | reason=tp_10.0_pips net_pips=13.9
+2025.05.12 13:30:00   PROBE_OPEN | LONG | p=0.89360 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.12 19:15:00   ADD | LONG | p=0.89119 | lot=0.24 | 
+2025.05.13 06:30:00   CLOSE_BASKET | LONG | p=0.89241 | lot=0.25 | reason=tp_10.0_pips net_pips=11.2
+2025.05.14 00:05:00   PROBE_OPEN | LONG | p=0.90171 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.14 05:00:00   CLOSE_BASKET | LONG | p=0.90347 | lot=0.01 | reason=tp_10.0_pips net_pips=17.6
+2025.05.14 06:30:00   PROBE_OPEN | LONG | p=0.90213 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.14 11:00:00   CLOSE_BASKET | LONG | p=0.90318 | lot=0.01 | reason=tp_10.0_pips net_pips=10.5
+2025.05.14 13:00:00   PROBE_OPEN | LONG | p=0.90171 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.14 19:45:00   ADD | LONG | p=0.89912 | lot=0.24 | 
+2025.05.15 00:30:00   ADD | LONG | p=0.89853 | lot=0.36 | 
+2025.05.15 04:45:00   CLOSE_BASKET | LONG | p=0.89992 | lot=0.61 | reason=tp_10.0_pips net_pips=11.1
+2025.05.15 07:30:00   PROBE_OPEN | LONG | p=0.89927 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.15 12:45:00   ADD | LONG | p=0.89727 | lot=0.24 | 
+2025.05.15 17:45:00   ADD | LONG | p=0.89508 | lot=0.36 | 
+2025.05.16 04:00:00   ADD | LONG | p=0.89291 | lot=0.48 | 
+2025.05.16 07:30:00   CLOSE_BASKET | LONG | p=0.89567 | lot=1.09 | reason=tp_10.0_pips net_pips=10.2
+2025.05.16 13:15:00   PROBE_OPEN | LONG | p=0.89627 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.16 17:45:00   ADD | LONG | p=0.89428 | lot=0.24 | 
+2025.05.16 21:30:00   CLOSE_BASKET | LONG | p=0.89541 | lot=0.25 | reason=tp_10.0_pips net_pips=10.5
+2025.05.16 23:30:00   PROBE_OPEN | LONG | p=0.89524 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.19 05:30:00   CLOSE_BASKET | LONG | p=0.89635 | lot=0.01 | reason=tp_10.0_pips net_pips=11.1
+2025.05.19 07:45:00   PROBE_OPEN | LONG | p=0.89527 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.19 10:30:00   CLOSE_BASKET | LONG | p=0.89635 | lot=0.01 | reason=tp_10.0_pips net_pips=10.8
+2025.05.20 00:15:00   PROBE_OPEN | LONG | p=0.90120 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.20 07:15:00   ADD | LONG | p=0.89938 | lot=0.24 | 
+2025.05.20 07:45:00   ADD | LONG | p=0.89749 | lot=0.36 | 
+2025.05.20 09:00:00   ADD | LONG | p=0.89550 | lot=0.48 | 
+2025.05.20 15:30:00   ADD | LONG | p=0.89357 | lot=0.60 | 
+2025.05.20 15:45:00   ADD | LONG | p=0.89158 | lot=0.72 | 
+2025.05.21 06:30:00   CLOSE_BASKET | LONG | p=0.89567 | lot=2.41 | reason=tp_10.0_pips net_pips=11.1
+2025.05.21 10:15:00   PROBE_OPEN | LONG | p=0.89506 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.21 16:30:00   ADD | LONG | p=0.89315 | lot=0.24 | 
+2025.05.21 17:15:00   CLOSE_BASKET | LONG | p=0.89435 | lot=0.25 | reason=tp_10.0_pips net_pips=11.2
+2025.05.21 20:30:00   PROBE_OPEN | LONG | p=0.89261 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.22 11:15:00   CLOSE_BASKET | LONG | p=0.89412 | lot=0.01 | reason=tp_10.0_pips net_pips=15.1
+2025.05.22 11:30:00   PROBE_OPEN | SHORT | p=0.89381 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.22 12:15:00   CLOSE_BASKET | SHORT | p=0.89212 | lot=0.01 | reason=tp_10.0_pips net_pips=16.9
+2025.05.23 04:00:00   PROBE_OPEN | SHORT | p=0.88876 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.23 10:45:00   ADD | SHORT | p=0.89121 | lot=0.24 | 
+2025.05.23 15:15:00   CLOSE_BASKET | SHORT | p=0.89022 | lot=0.25 | reason=tp_10.0_pips net_pips=8.9
+2025.05.23 18:30:00   PROBE_OPEN | SHORT | p=0.89088 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.26 00:15:00   CLOSE_BASKET | SHORT | p=0.89168 | lot=0.01 | reason=tp_10.0_pips net_pips=-8.0
+2025.05.26 00:30:00   PROBE_OPEN | LONG | p=0.89203 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.26 04:45:00   CLOSE_BASKET | LONG | p=0.89404 | lot=0.01 | reason=tp_10.0_pips net_pips=20.1
+2025.05.26 10:00:00   PROBE_OPEN | LONG | p=0.89329 | lot=0.01 | gate_l=1 gate_s=0
+2025.05.26 20:00:00   ADD | LONG | p=0.89142 | lot=0.24 | 
+2025.05.27 08:15:00   ADD | LONG | p=0.88876 | lot=0.36 | 
+2025.05.27 18:00:00   ADD | LONG | p=0.88629 | lot=0.48 | 
+2025.05.27 22:45:00   CLOSE_BASKET | LONG | p=0.88959 | lot=1.09 | reason=tp_10.0_pips net_pips=12.9
+2025.05.27 23:00:00   PROBE_OPEN | SHORT | p=0.89033 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.28 00:15:30   CLOSE_BASKET | SHORT | p=0.89079 | lot=0.01 | reason=tp_10.0_pips net_pips=-4.6
+2025.05.28 01:15:00   PROBE_OPEN | SHORT | p=0.88983 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.28 05:00:00   CLOSE_BASKET | SHORT | p=0.88892 | lot=0.01 | reason=tp_10.0_pips net_pips=9.1
+2025.05.28 06:45:00   PROBE_OPEN | SHORT | p=0.89048 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.28 07:30:00   CLOSE_BASKET | SHORT | p=0.88972 | lot=0.01 | reason=tp_10.0_pips net_pips=7.6
+2025.05.28 09:45:00   PROBE_OPEN | SHORT | p=0.89032 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.28 10:00:00   CLOSE_BASKET | SHORT | p=0.88948 | lot=0.01 | reason=tp_10.0_pips net_pips=8.4
+2025.05.28 11:15:00   PROBE_OPEN | SHORT | p=0.89043 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.28 15:45:00   CLOSE_BASKET | SHORT | p=0.88957 | lot=0.01 | reason=tp_10.0_pips net_pips=8.6
+2025.05.28 20:30:00   PROBE_OPEN | SHORT | p=0.88818 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.29 10:45:00   ADD | SHORT | p=0.89054 | lot=0.24 | 
+2025.05.29 15:00:00   CLOSE_BASKET | SHORT | p=0.88971 | lot=0.25 | reason=tp_10.0_pips net_pips=7.4
+2025.05.29 15:45:00   PROBE_OPEN | SHORT | p=0.89046 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.29 16:45:00   CLOSE_BASKET | SHORT | p=0.88961 | lot=0.01 | reason=tp_10.0_pips net_pips=8.5
+2025.05.29 19:30:00   PROBE_OPEN | SHORT | p=0.88969 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.30 04:45:00   CLOSE_BASKET | SHORT | p=0.88884 | lot=0.01 | reason=tp_10.0_pips net_pips=8.5
+2025.05.30 08:30:00   PROBE_OPEN | SHORT | p=0.88873 | lot=0.01 | gate_l=0 gate_s=1
+2025.05.30 10:00:00   CLOSE_BASKET | SHORT | p=0.88779 | lot=0.01 | reason=tp_10.0_pips net_pips=9.4
+2025.06.02 01:30:00   PROBE_OPEN | SHORT | p=0.88405 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.02 04:15:00   ADD | SHORT | p=0.88647 | lot=0.24 | 
+2025.06.02 06:15:00   CLOSE_BASKET | SHORT | p=0.88538 | lot=0.25 | reason=tp_10.0_pips net_pips=9.9
+2025.06.02 08:45:00   PROBE_OPEN | SHORT | p=0.88596 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.02 14:30:00   ADD | SHORT | p=0.88839 | lot=0.24 | 
+2025.06.02 16:30:00   CLOSE_BASKET | SHORT | p=0.88754 | lot=0.25 | reason=tp_10.0_pips net_pips=7.5
+2025.06.02 17:15:00   PROBE_OPEN | SHORT | p=0.88851 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.02 23:45:00   ADD | SHORT | p=0.89089 | lot=0.24 | 
+2025.06.03 00:15:00   CLOSE_BASKET | SHORT | p=0.89087 | lot=0.25 | reason=tp_10.0_pips net_pips=-0.8
+2025.06.03 01:00:00   PROBE_OPEN | LONG | p=0.88979 | lot=0.01 | gate_l=1 gate_s=0
+2025.06.03 02:45:00   CLOSE_BASKET | LONG | p=0.89082 | lot=0.01 | reason=tp_10.0_pips net_pips=10.3
+2025.06.03 04:45:00   PROBE_OPEN | LONG | p=0.88997 | lot=0.01 | gate_l=1 gate_s=0
+2025.06.03 06:00:00   ADD | LONG | p=0.88804 | lot=0.24 | 
+2025.06.03 15:45:00   ADD | LONG | p=0.88617 | lot=0.36 | 
+2025.06.04 12:30:00   CLOSE_BASKET | LONG | p=0.88801 | lot=0.61 | reason=tp_10.0_pips net_pips=10.4
+2025.06.04 12:45:00   PROBE_OPEN | SHORT | p=0.88805 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.05 00:15:00   CLOSE_BASKET | SHORT | p=0.88839 | lot=0.01 | reason=tp_10.0_pips net_pips=-3.4
+2025.06.05 02:00:00   PROBE_OPEN | SHORT | p=0.88773 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.05 16:15:00   ADD | SHORT | p=0.89062 | lot=0.24 | 
+2025.06.05 21:15:00   CLOSE_BASKET | SHORT | p=0.88971 | lot=0.25 | reason=tp_10.0_pips net_pips=7.9
+2025.06.06 01:45:00   PROBE_OPEN | SHORT | p=0.88940 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.06 05:15:00   CLOSE_BASKET | SHORT | p=0.88851 | lot=0.01 | reason=tp_10.0_pips net_pips=8.9
+2025.06.06 10:45:00   PROBE_OPEN | SHORT | p=0.88822 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.09 04:30:00   ADD | SHORT | p=0.89054 | lot=0.24 | 
+2025.06.09 11:45:00   ADD | SHORT | p=0.89275 | lot=0.36 | 
+2025.06.09 16:15:00   CLOSE_BASKET | SHORT | p=0.89104 | lot=0.61 | reason=tp_10.0_pips net_pips=7.7
+2025.06.09 16:45:00   PROBE_OPEN | SHORT | p=0.89163 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.10 06:30:00   ADD | SHORT | p=0.89416 | lot=0.24 | 
+2025.06.10 08:30:00   CLOSE_BASKET | SHORT | p=0.89241 | lot=0.25 | reason=tp_10.0_pips net_pips=16.5
+2025.06.10 09:00:00   PROBE_OPEN | LONG | p=0.89247 | lot=0.01 | gate_l=1 gate_s=0
+2025.06.11 04:45:00   ADD | LONG | p=0.89051 | lot=0.24 | 
+2025.06.11 15:45:00   CLOSE_BASKET | LONG | p=0.89251 | lot=0.25 | reason=tp_10.0_pips net_pips=19.2
+2025.06.11 19:45:00   PROBE_OPEN | LONG | p=0.89080 | lot=0.01 | gate_l=1 gate_s=0
+2025.06.11 22:15:00   ADD | LONG | p=0.88882 | lot=0.24 | 
+2025.06.12 04:45:00   ADD | LONG | p=0.88656 | lot=0.36 | 
+2025.06.12 15:45:00   CLOSE_BASKET | LONG | p=0.88958 | lot=0.61 | reason=tp_10.0_pips net_pips=20.6
+2025.06.12 16:15:00   PROBE_OPEN | SHORT | p=0.88810 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.13 03:15:00   CLOSE_BASKET | SHORT | p=0.88433 | lot=0.01 | reason=tp_10.0_pips net_pips=37.7
+2025.06.13 10:45:00   PROBE_OPEN | SHORT | p=0.88360 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.13 13:15:00   CLOSE_BASKET | SHORT | p=0.88290 | lot=0.01 | reason=tp_10.0_pips net_pips=7.0
+2025.06.13 14:45:00   PROBE_OPEN | SHORT | p=0.88323 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.13 15:15:00   CLOSE_BASKET | SHORT | p=0.88254 | lot=0.01 | reason=tp_10.0_pips net_pips=6.9
+2025.06.13 17:00:00   PROBE_OPEN | SHORT | p=0.88281 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.13 21:45:00   CLOSE_BASKET | SHORT | p=0.88193 | lot=0.01 | reason=tp_10.0_pips net_pips=8.8
+2025.06.16 03:15:00   PROBE_OPEN | SHORT | p=0.88174 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.16 04:30:00   CLOSE_BASKET | SHORT | p=0.88090 | lot=0.01 | reason=tp_10.0_pips net_pips=8.4
+2025.06.16 07:30:00   PROBE_OPEN | SHORT | p=0.88152 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.16 10:30:00   ADD | SHORT | p=0.88376 | lot=0.24 | 
+2025.06.16 17:00:00   ADD | SHORT | p=0.88636 | lot=0.36 | 
+2025.06.17 00:15:00   CLOSE_BASKET | SHORT | p=0.88546 | lot=0.61 | reason=tp_10.0_pips net_pips=-2.0
+2025.06.17 04:45:00   PROBE_OPEN | SHORT | p=0.88477 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.17 09:30:00   ADD | SHORT | p=0.88708 | lot=0.24 | 
+2025.06.17 12:45:00   CLOSE_BASKET | SHORT | p=0.88616 | lot=0.25 | reason=tp_10.0_pips net_pips=8.3
+2025.06.17 14:15:00   PROBE_OPEN | SHORT | p=0.88684 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.17 15:45:00   CLOSE_BASKET | SHORT | p=0.88591 | lot=0.01 | reason=tp_10.0_pips net_pips=9.3
+2025.06.17 16:30:00   PROBE_OPEN | SHORT | p=0.88660 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.17 17:45:00   CLOSE_BASKET | SHORT | p=0.88471 | lot=0.01 | reason=tp_10.0_pips net_pips=18.9
+2025.06.17 23:15:00   PROBE_OPEN | SHORT | p=0.88422 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.18 03:00:00   ADD | SHORT | p=0.88658 | lot=0.24 | 
+2025.06.18 09:30:00   ADD | SHORT | p=0.88878 | lot=0.36 | 
+2025.06.18 14:00:00   CLOSE_BASKET | SHORT | p=0.88696 | lot=0.61 | reason=tp_10.0_pips net_pips=8.8
+2025.06.18 16:30:00   PROBE_OPEN | SHORT | p=0.88756 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.18 17:15:00   ADD | SHORT | p=0.89009 | lot=0.24 | 
+2025.06.19 04:15:00   CLOSE_BASKET | SHORT | p=0.88908 | lot=0.25 | reason=tp_10.0_pips net_pips=9.1
+2025.06.19 04:30:00   PROBE_OPEN | LONG | p=0.88951 | lot=0.01 | gate_l=1 gate_s=0
+2025.06.19 09:00:00   ADD | LONG | p=0.88725 | lot=0.24 | 
+2025.06.20 03:15:00   CLOSE_BASKET | LONG | p=0.88868 | lot=0.25 | reason=tp_10.0_pips net_pips=13.4
+2025.06.20 03:30:00   PROBE_OPEN | SHORT | p=0.88789 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.20 15:45:00   ADD | SHORT | p=0.89012 | lot=0.24 | 
+2025.06.20 16:45:00   CLOSE_BASKET | SHORT | p=0.88929 | lot=0.25 | reason=tp_10.0_pips net_pips=7.4
+2025.06.23 02:30:00   PROBE_OPEN | SHORT | p=0.88565 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.23 03:45:00   CLOSE_BASKET | SHORT | p=0.88491 | lot=0.01 | reason=tp_10.0_pips net_pips=7.4
+2025.06.23 09:45:00   PROBE_OPEN | SHORT | p=0.88275 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.23 12:15:00   CLOSE_BASKET | SHORT | p=0.88182 | lot=0.01 | reason=tp_10.0_pips net_pips=9.3
+2025.06.23 17:00:00   PROBE_OPEN | SHORT | p=0.88103 | lot=0.01 | gate_l=0 gate_s=1
+2025.06.23 17:45:00   ADD | SHORT | p=0.88332 | lot=0.24 | 
+2025.06.23 20:30:00   ADD | SHORT | p=0.88645 | lot=0.36 | 
+2025.06.24 01:30:00   ADD | SHORT | p=0.88877 | lot=0.48 | 
+2025.06.24 09:00:00   ADD | SHORT | p=0.89101 | lot=0.60 | 
+2025.06.25 21:45:00   ADD | SHORT | p=0.89350 | lot=0.72 | 
+2025.06.26 11:45:00   ADD | SHORT | p=0.89574 | lot=0.84 | 
+2025.07.02 00:00:00   ADD | SHORT | p=0.89623 | lot=0.96 | 
+2025.07.03 15:45:00   CLOSE_BASKET | SHORT | p=0.89065 | lot=4.21 | reason=tp_10.0_pips net_pips=18.1
+2025.07.03 16:00:00   PROBE_OPEN | LONG | p=0.89156 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.03 16:45:00   CLOSE_BASKET | LONG | p=0.89273 | lot=0.01 | reason=tp_10.0_pips net_pips=11.7
+2025.07.03 18:00:00   PROBE_OPEN | LONG | p=0.89151 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.04 01:45:30   CLOSE_BASKET | LONG | p=0.89257 | lot=0.01 | reason=tp_10.0_pips net_pips=10.6
+2025.07.04 04:30:00   PROBE_OPEN | LONG | p=0.89203 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.07 03:45:00   ADD | LONG | p=0.88992 | lot=0.24 | 
+2025.07.07 06:45:00   ADD | LONG | p=0.88789 | lot=0.36 | 
+2025.07.08 07:45:00   CLOSE_BASKET | LONG | p=0.89254 | lot=0.61 | reason=tp_10.0_pips net_pips=37.8
+2025.07.08 08:00:00   PROBE_OPEN | SHORT | p=0.89269 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.08 08:45:00   CLOSE_BASKET | SHORT | p=0.89180 | lot=0.01 | reason=tp_10.0_pips net_pips=8.9
+2025.07.08 09:00:00   PROBE_OPEN | SHORT | p=0.89261 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.08 17:15:00   CLOSE_BASKET | SHORT | p=0.89149 | lot=0.01 | reason=tp_10.0_pips net_pips=11.2
+2025.07.08 19:30:00   PROBE_OPEN | SHORT | p=0.89262 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.09 00:15:30   CLOSE_BASKET | SHORT | p=0.89304 | lot=0.01 | reason=tp_10.0_pips net_pips=-4.2
+2025.07.09 00:30:30   PROBE_OPEN | LONG | p=0.89258 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.09 07:45:00   CLOSE_BASKET | LONG | p=0.89366 | lot=0.01 | reason=tp_10.0_pips net_pips=10.8
+2025.07.09 11:15:00   PROBE_OPEN | LONG | p=0.89305 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.09 16:00:00   CLOSE_BASKET | LONG | p=0.89418 | lot=0.01 | reason=tp_10.0_pips net_pips=11.3
+2025.07.09 23:45:00   PROBE_OPEN | LONG | p=0.89486 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.10 09:00:00   CLOSE_BASKET | LONG | p=0.89592 | lot=0.01 | reason=tp_10.0_pips net_pips=10.6
+2025.07.10 15:45:00   PROBE_OPEN | LONG | p=0.89644 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.10 18:00:00   CLOSE_BASKET | LONG | p=0.89757 | lot=0.01 | reason=tp_10.0_pips net_pips=11.3
+2025.07.11 00:15:00   PROBE_OPEN | LONG | p=0.90079 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.11 04:45:00   CLOSE_BASKET | LONG | p=0.90196 | lot=0.01 | reason=tp_10.0_pips net_pips=11.7
+2025.07.11 07:45:00   PROBE_OPEN | LONG | p=0.90054 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.11 09:45:00   CLOSE_BASKET | LONG | p=0.90154 | lot=0.01 | reason=tp_10.0_pips net_pips=10.0
+2025.07.11 11:30:00   PROBE_OPEN | LONG | p=0.90136 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.14 00:15:00   ADD | LONG | p=0.89983 | lot=0.24 | 
+2025.07.14 15:45:00   ADD | LONG | p=0.89765 | lot=0.36 | 
+2025.07.15 17:15:00   ADD | LONG | p=0.89566 | lot=0.48 | 
+2025.07.15 19:45:00   ADD | LONG | p=0.89363 | lot=0.60 | 
+2025.07.17 04:45:00   ADD | LONG | p=0.89070 | lot=0.72 | 
+2025.07.17 05:45:00   ADD | LONG | p=0.88850 | lot=0.84 | 
+2025.07.18 06:00:00   CLOSE_BASKET | LONG | p=0.89405 | lot=3.25 | reason=tp_10.0_pips net_pips=11.7
+2025.07.18 06:15:00   PROBE_OPEN | SHORT | p=0.89403 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.18 07:15:00   CLOSE_BASKET | SHORT | p=0.89333 | lot=0.01 | reason=tp_10.0_pips net_pips=7.0
+2025.07.18 10:00:00   PROBE_OPEN | SHORT | p=0.89388 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.18 21:45:00   CLOSE_BASKET | SHORT | p=0.89320 | lot=0.01 | reason=tp_10.0_pips net_pips=6.8
+2025.07.21 02:15:00   PROBE_OPEN | SHORT | p=0.89328 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.21 23:45:00   CLOSE_BASKET | SHORT | p=0.89262 | lot=0.01 | reason=tp_10.0_pips net_pips=6.6
+2025.07.22 05:30:00   PROBE_OPEN | SHORT | p=0.89255 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.22 08:30:00   CLOSE_BASKET | SHORT | p=0.89189 | lot=0.01 | reason=tp_10.0_pips net_pips=6.6
+2025.07.22 14:45:00   PROBE_OPEN | SHORT | p=0.89121 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.22 16:30:00   ADD | SHORT | p=0.89341 | lot=0.24 | 
+2025.07.22 17:00:00   CLOSE_BASKET | SHORT | p=0.89262 | lot=0.25 | reason=tp_10.0_pips net_pips=7.0
+2025.07.23 02:15:00   PROBE_OPEN | SHORT | p=0.89148 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.23 10:15:00   ADD | SHORT | p=0.89392 | lot=0.24 | 
+2025.07.23 16:30:00   ADD | SHORT | p=0.89627 | lot=0.36 | 
+2025.07.24 04:45:00   ADD | SHORT | p=0.89862 | lot=0.48 | 
+2025.07.28 04:00:00   ADD | SHORT | p=0.90096 | lot=0.60 | 
+2025.07.28 10:30:00   CLOSE_BASKET | SHORT | p=0.89736 | lot=1.69 | reason=tp_10.0_pips net_pips=8.8
+2025.07.28 10:45:00   PROBE_OPEN | LONG | p=0.89670 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.28 17:00:00   ADD | LONG | p=0.89415 | lot=0.24 | 
+2025.07.28 17:45:00   CLOSE_BASKET | LONG | p=0.89540 | lot=0.25 | reason=tp_10.0_pips net_pips=11.5
+2025.07.28 18:30:00   PROBE_OPEN | LONG | p=0.89470 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.29 01:30:00   CLOSE_BASKET | LONG | p=0.89583 | lot=0.01 | reason=tp_10.0_pips net_pips=11.3
+2025.07.29 03:45:00   PROBE_OPEN | LONG | p=0.89506 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.29 05:15:00   CLOSE_BASKET | LONG | p=0.89613 | lot=0.01 | reason=tp_10.0_pips net_pips=10.7
+2025.07.29 07:45:00   PROBE_OPEN | LONG | p=0.89572 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.29 18:00:00   CLOSE_BASKET | LONG | p=0.89682 | lot=0.01 | reason=tp_10.0_pips net_pips=11.0
+2025.07.30 00:00:00   PROBE_OPEN | LONG | p=0.89707 | lot=0.01 | gate_l=1 gate_s=0
+2025.07.30 14:00:00   ADD | LONG | p=0.89514 | lot=0.24 | 
+2025.07.30 16:00:00   ADD | LONG | p=0.89282 | lot=0.36 | 
+2025.07.30 22:00:00   ADD | LONG | p=0.88865 | lot=0.48 | 
+2025.07.31 07:45:00   CLOSE_BASKET | LONG | p=0.89291 | lot=1.09 | reason=tp_10.0_pips net_pips=13.8
+2025.07.31 08:00:00   PROBE_OPEN | SHORT | p=0.89328 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.31 13:15:00   CLOSE_BASKET | SHORT | p=0.89258 | lot=0.01 | reason=tp_10.0_pips net_pips=7.0
+2025.07.31 21:45:00   PROBE_OPEN | SHORT | p=0.89067 | lot=0.01 | gate_l=0 gate_s=1
+2025.07.31 23:30:00   CLOSE_BASKET | SHORT | p=0.88998 | lot=0.01 | reason=tp_10.0_pips net_pips=6.9
+2025.08.01 02:00:00   PROBE_OPEN | SHORT | p=0.89095 | lot=0.01 | gate_l=0 gate_s=1
+2025.08.01 15:45:00   ADD | SHORT | p=0.89441 | lot=0.24 | 
+2025.08.01 16:45:00   CLOSE_BASKET | SHORT | p=0.89175 | lot=0.25 | reason=tp_10.0_pips net_pips=25.2
+2025.08.01 22:45:00   PROBE_OPEN | SHORT | p=0.89054 | lot=0.01 | gate_l=0 gate_s=1
+2025.08.04 04:45:00   ADD | SHORT | p=0.89302 | lot=0.24 | 
+2025.08.04 10:30:00   CLOSE_BASKET | SHORT | p=0.89221 | lot=0.25 | reason=tp_10.0_pips net_pips=7.1
+2025.08.04 12:15:00   PROBE_OPEN | SHORT | p=0.89312 | lot=0.01 | gate_l=0 gate_s=1
+2025.08.04 13:45:00   CLOSE_BASKET | SHORT | p=0.89243 | lot=0.01 | reason=tp_10.0_pips net_pips=6.9
+2025.08.04 23:15:00   PROBE_OPEN | SHORT | p=0.89084 | lot=0.01 | gate_l=0 gate_s=1
+2025.08.06 06:30:00   ADD | SHORT | p=0.89335 | lot=0.24 | 
+2025.08.07 10:30:00   ADD | SHORT | p=0.89559 | lot=0.36 | 
+2025.08.07 18:15:00   CLOSE_BASKET | SHORT | p=0.89387 | lot=0.61 | reason=tp_10.0_pips net_pips=7.6
+2025.08.07 18:30:00   PROBE_OPEN | LONG | p=0.89419 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.07 22:45:00   CLOSE_BASKET | LONG | p=0.89537 | lot=0.01 | reason=tp_10.0_pips net_pips=11.8
+2025.08.08 04:30:00   PROBE_OPEN | LONG | p=0.89561 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.08 10:15:00   CLOSE_BASKET | LONG | p=0.89678 | lot=0.01 | reason=tp_10.0_pips net_pips=11.7
+2025.08.08 12:00:00   PROBE_OPEN | LONG | p=0.89566 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.08 15:45:00   CLOSE_BASKET | LONG | p=0.89668 | lot=0.01 | reason=tp_10.0_pips net_pips=10.2
+2025.08.08 22:30:00   PROBE_OPEN | LONG | p=0.89726 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.12 06:15:00   CLOSE_BASKET | LONG | p=0.89834 | lot=0.01 | reason=tp_10.0_pips net_pips=10.8
+2025.08.12 07:45:00   PROBE_OPEN | LONG | p=0.89732 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.12 09:00:00   ADD | LONG | p=0.89527 | lot=0.24 | 
+2025.08.12 15:45:00   CLOSE_BASKET | LONG | p=0.89641 | lot=0.25 | reason=tp_10.0_pips net_pips=10.6
+2025.08.13 00:30:00   PROBE_OPEN | LONG | p=0.89933 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.13 09:45:00   CLOSE_BASKET | LONG | p=0.90049 | lot=0.01 | reason=tp_10.0_pips net_pips=11.6
+2025.08.13 15:45:00   PROBE_OPEN | LONG | p=0.90101 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.14 05:00:00   CLOSE_BASKET | LONG | p=0.90230 | lot=0.01 | reason=tp_10.0_pips net_pips=12.9
+2025.08.14 07:00:00   PROBE_OPEN | LONG | p=0.90118 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.14 13:15:00   ADD | LONG | p=0.89910 | lot=0.24 | 
+2025.08.14 16:15:00   ADD | LONG | p=0.89718 | lot=0.36 | 
+2025.08.15 16:45:00   CLOSE_BASKET | LONG | p=0.89917 | lot=0.61 | reason=tp_10.0_pips net_pips=11.7
+2025.08.15 20:15:00   PROBE_OPEN | LONG | p=0.89899 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.18 08:30:00   CLOSE_BASKET | LONG | p=0.90005 | lot=0.01 | reason=tp_10.0_pips net_pips=10.6
+2025.08.18 09:30:00   PROBE_OPEN | LONG | p=0.89958 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.18 15:30:00   ADD | LONG | p=0.89758 | lot=0.24 | 
+2025.08.19 09:00:00   ADD | LONG | p=0.89507 | lot=0.36 | 
+2025.08.19 15:45:00   CLOSE_BASKET | LONG | p=0.89718 | lot=0.61 | reason=tp_10.0_pips net_pips=10.5
+2025.08.19 16:45:00   PROBE_OPEN | LONG | p=0.89645 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.19 21:45:00   ADD | LONG | p=0.89434 | lot=0.24 | 
+2025.08.20 11:30:00   ADD | LONG | p=0.89215 | lot=0.36 | 
+2025.08.22 11:45:00   CLOSE_BASKET | LONG | p=0.89420 | lot=0.61 | reason=tp_10.0_pips net_pips=11.2
+2025.08.22 12:00:00   PROBE_OPEN | SHORT | p=0.89416 | lot=0.01 | gate_l=0 gate_s=1
+2025.08.22 13:00:00   CLOSE_BASKET | SHORT | p=0.89332 | lot=0.01 | reason=tp_10.0_pips net_pips=8.4
+2025.08.22 15:30:00   PROBE_OPEN | SHORT | p=0.89385 | lot=0.01 | gate_l=0 gate_s=1
+2025.08.22 17:15:00   ADD | SHORT | p=0.89761 | lot=0.24 | 
+2025.08.25 04:15:00   CLOSE_BASKET | SHORT | p=0.89670 | lot=0.25 | reason=tp_10.0_pips net_pips=7.6
+2025.08.25 04:30:00   PROBE_OPEN | LONG | p=0.89639 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.25 07:15:00   CLOSE_BASKET | LONG | p=0.89742 | lot=0.01 | reason=tp_10.0_pips net_pips=10.3
+2025.08.25 11:00:00   PROBE_OPEN | LONG | p=0.89760 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.25 17:30:00   CLOSE_BASKET | LONG | p=0.89892 | lot=0.01 | reason=tp_10.0_pips net_pips=13.2
+2025.08.25 20:30:00   PROBE_OPEN | LONG | p=0.89847 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.27 11:15:00   ADD | LONG | p=0.89655 | lot=0.24 | 
+2025.08.27 19:00:00   CLOSE_BASKET | LONG | p=0.89778 | lot=0.25 | reason=tp_10.0_pips net_pips=11.5
+2025.08.27 22:45:00   PROBE_OPEN | LONG | p=0.89760 | lot=0.01 | gate_l=1 gate_s=0
+2025.08.29 04:45:00   CLOSE_BASKET | LONG | p=0.89892 | lot=0.01 | reason=tp_10.0_pips net_pips=13.2
+2025.08.29 09:45:00   PROBE_OPEN | LONG | p=0.89873 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.01 11:00:00   CLOSE_BASKET | LONG | p=0.89981 | lot=0.01 | reason=tp_10.0_pips net_pips=10.8
+2025.09.02 00:00:00   PROBE_OPEN | LONG | p=0.90141 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.02 07:15:00   ADD | LONG | p=0.89959 | lot=0.24 | 
+2025.09.02 10:30:00   ADD | LONG | p=0.89764 | lot=0.36 | 
+2025.09.02 18:00:00   CLOSE_BASKET | LONG | p=0.89951 | lot=0.61 | reason=tp_10.0_pips net_pips=10.4
+2025.09.02 21:45:00   PROBE_OPEN | LONG | p=0.89822 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.03 05:00:00   CLOSE_BASKET | LONG | p=0.89930 | lot=0.01 | reason=tp_10.0_pips net_pips=10.8
+2025.09.03 08:45:00   PROBE_OPEN | LONG | p=0.89876 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.03 11:30:00   CLOSE_BASKET | LONG | p=0.90016 | lot=0.01 | reason=tp_10.0_pips net_pips=14.0
+2025.09.03 22:45:00   PROBE_OPEN | LONG | p=0.90265 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.04 15:00:00   ADD | LONG | p=0.90072 | lot=0.24 | 
+2025.09.05 09:00:00   CLOSE_BASKET | LONG | p=0.90190 | lot=0.25 | reason=tp_10.0_pips net_pips=11.0
+2025.09.05 15:30:00   PROBE_OPEN | LONG | p=0.90178 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.05 15:45:00   CLOSE_BASKET | LONG | p=0.90614 | lot=0.01 | reason=tp_10.0_pips net_pips=43.6
+2025.09.05 23:30:00   PROBE_OPEN | LONG | p=0.90716 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.08 09:15:00   CLOSE_BASKET | LONG | p=0.90824 | lot=0.01 | reason=tp_10.0_pips net_pips=10.8
+2025.09.08 23:30:00   PROBE_OPEN | LONG | p=0.91031 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.09 07:30:00   CLOSE_BASKET | LONG | p=0.91149 | lot=0.01 | reason=tp_10.0_pips net_pips=11.8
+2025.09.09 15:30:00   PROBE_OPEN | LONG | p=0.91246 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.10 05:15:00   CLOSE_BASKET | LONG | p=0.91348 | lot=0.01 | reason=tp_10.0_pips net_pips=10.2
+2025.09.10 11:45:00   PROBE_OPEN | LONG | p=0.91413 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.10 14:15:00   CLOSE_BASKET | LONG | p=0.91523 | lot=0.01 | reason=tp_10.0_pips net_pips=11.0
+2025.09.10 22:15:00   PROBE_OPEN | LONG | p=0.91733 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.11 16:15:00   CLOSE_BASKET | LONG | p=0.91838 | lot=0.01 | reason=tp_10.0_pips net_pips=10.5
+2025.09.12 00:00:00   PROBE_OPEN | LONG | p=0.92133 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.12 04:00:00   CLOSE_BASKET | LONG | p=0.92250 | lot=0.01 | reason=tp_10.0_pips net_pips=11.7
+2025.09.12 05:15:00   PROBE_OPEN | LONG | p=0.92171 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.12 14:30:00   ADD | LONG | p=0.91970 | lot=0.24 | 
+2025.09.15 04:45:00   CLOSE_BASKET | LONG | p=0.92097 | lot=0.25 | reason=tp_10.0_pips net_pips=11.9
+2025.09.15 09:30:00   PROBE_OPEN | LONG | p=0.92086 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.15 10:45:00   CLOSE_BASKET | LONG | p=0.92199 | lot=0.01 | reason=tp_10.0_pips net_pips=11.3
+2025.09.15 12:30:00   PROBE_OPEN | LONG | p=0.92118 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.15 22:15:00   ADD | LONG | p=0.91902 | lot=0.24 | 
+2025.09.16 15:30:00   ADD | LONG | p=0.91708 | lot=0.36 | 
+2025.09.17 17:00:00   CLOSE_BASKET | LONG | p=0.91894 | lot=0.61 | reason=tp_10.0_pips net_pips=10.3
+2025.09.17 18:15:00   PROBE_OPEN | LONG | p=0.91762 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.17 21:15:00   CLOSE_BASKET | LONG | p=0.91877 | lot=0.01 | reason=tp_10.0_pips net_pips=11.5
+2025.09.17 22:00:00   PROBE_OPEN | LONG | p=0.91673 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.18 07:30:00   ADD | LONG | p=0.91471 | lot=0.24 | 
+2025.09.18 13:00:00   CLOSE_BASKET | LONG | p=0.91628 | lot=0.25 | reason=tp_10.0_pips net_pips=14.9
+2025.09.18 15:45:00   PROBE_OPEN | LONG | p=0.91501 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.18 16:45:00   ADD | LONG | p=0.91251 | lot=0.24 | 
+2025.09.18 17:30:00   CLOSE_BASKET | LONG | p=0.91368 | lot=0.25 | reason=tp_10.0_pips net_pips=10.7
+2025.09.18 17:45:00   PROBE_OPEN | LONG | p=0.91352 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.19 05:00:00   ADD | LONG | p=0.91143 | lot=0.24 | 
+2025.09.19 17:45:00   ADD | LONG | p=0.90938 | lot=0.36 | 
+2025.09.22 19:30:00   CLOSE_BASKET | LONG | p=0.91137 | lot=0.61 | reason=tp_10.0_pips net_pips=11.2
+2025.09.22 19:45:00   PROBE_OPEN | SHORT | p=0.91147 | lot=0.01 | gate_l=0 gate_s=1
+2025.09.23 05:30:00   CLOSE_BASKET | SHORT | p=0.91066 | lot=0.01 | reason=tp_10.0_pips net_pips=8.1
+2025.09.23 05:45:00   PROBE_OPEN | LONG | p=0.91086 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.23 11:15:00   CLOSE_BASKET | LONG | p=0.91208 | lot=0.01 | reason=tp_10.0_pips net_pips=12.2
+2025.09.23 15:45:00   PROBE_OPEN | LONG | p=0.91287 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.24 04:45:00   CLOSE_BASKET | LONG | p=0.91487 | lot=0.01 | reason=tp_10.0_pips net_pips=20.0
+2025.09.24 11:30:00   PROBE_OPEN | LONG | p=0.91635 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.25 00:15:00   ADD | LONG | p=0.91562 | lot=0.24 | 
+2025.09.25 11:30:00   CLOSE_BASKET | LONG | p=0.91669 | lot=0.25 | reason=tp_10.0_pips net_pips=10.4
+2025.09.25 14:15:00   PROBE_OPEN | LONG | p=0.91539 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.25 15:45:00   ADD | LONG | p=0.91279 | lot=0.24 | 
+2025.09.25 21:00:00   ADD | LONG | p=0.91082 | lot=0.36 | 
+2025.09.26 19:30:00   CLOSE_BASKET | LONG | p=0.91287 | lot=0.61 | reason=tp_10.0_pips net_pips=12.0
+2025.09.29 00:05:30   PROBE_OPEN | LONG | p=0.91370 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.29 10:30:00   CLOSE_BASKET | LONG | p=0.91479 | lot=0.01 | reason=tp_10.0_pips net_pips=10.9
+2025.09.29 12:45:00   PROBE_OPEN | LONG | p=0.91433 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.29 17:45:00   CLOSE_BASKET | LONG | p=0.91534 | lot=0.01 | reason=tp_10.0_pips net_pips=10.1
+2025.09.29 19:30:00   PROBE_OPEN | LONG | p=0.91481 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.30 04:15:00   CLOSE_BASKET | LONG | p=0.91628 | lot=0.01 | reason=tp_10.0_pips net_pips=14.7
+2025.09.30 10:45:00   PROBE_OPEN | LONG | p=0.91670 | lot=0.01 | gate_l=1 gate_s=0
+2025.09.30 11:00:00   CLOSE_BASKET | LONG | p=0.91849 | lot=0.01 | reason=tp_10.0_pips net_pips=17.9
+2025.09.30 21:45:00   PROBE_OPEN | LONG | p=0.92087 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.01 04:45:00   ADD | LONG | p=0.91895 | lot=0.24 | 
+2025.10.01 11:00:00   CLOSE_BASKET | LONG | p=0.92009 | lot=0.25 | reason=tp_10.0_pips net_pips=10.6
+2025.10.01 18:15:00   PROBE_OPEN | LONG | p=0.92131 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.02 07:45:00   CLOSE_BASKET | LONG | p=0.92231 | lot=0.01 | reason=tp_10.0_pips net_pips=10.0
+2025.10.02 09:45:00   PROBE_OPEN | LONG | p=0.92207 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.02 16:45:00   ADD | LONG | p=0.91968 | lot=0.24 | 
+2025.10.02 21:30:00   CLOSE_BASKET | LONG | p=0.92088 | lot=0.25 | reason=tp_10.0_pips net_pips=11.0
+2025.10.03 00:15:00   PROBE_OPEN | LONG | p=0.92187 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.06 00:15:00   ADD | LONG | p=0.91993 | lot=0.24 | 
+2025.10.06 04:45:00   CLOSE_BASKET | LONG | p=0.92118 | lot=0.25 | reason=tp_10.0_pips net_pips=11.7
+2025.10.06 08:00:00   PROBE_OPEN | LONG | p=0.92139 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.06 16:00:00   CLOSE_BASKET | LONG | p=0.92265 | lot=0.01 | reason=tp_10.0_pips net_pips=12.6
+2025.10.06 23:30:00   PROBE_OPEN | LONG | p=0.92302 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.07 09:15:00   ADD | LONG | p=0.92089 | lot=0.24 | 
+2025.10.07 18:00:00   ADD | LONG | p=0.91896 | lot=0.36 | 
+2025.10.08 04:30:00   ADD | LONG | p=0.91694 | lot=0.48 | 
+2025.10.09 04:30:00   CLOSE_BASKET | LONG | p=0.91979 | lot=1.09 | reason=tp_10.0_pips net_pips=12.6
+2025.10.09 09:30:00   PROBE_OPEN | LONG | p=0.91910 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.09 14:45:00   CLOSE_BASKET | LONG | p=0.92031 | lot=0.01 | reason=tp_10.0_pips net_pips=12.1
+2025.10.09 17:15:00   PROBE_OPEN | LONG | p=0.91969 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.10 05:30:00   CLOSE_BASKET | LONG | p=0.92092 | lot=0.01 | reason=tp_10.0_pips net_pips=12.3
+2025.10.10 08:15:00   PROBE_OPEN | LONG | p=0.92029 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.10 15:45:00   ADD | LONG | p=0.91684 | lot=0.24 | 
+2025.10.10 18:15:00   ADD | LONG | p=0.91230 | lot=0.36 | 
+2025.10.10 18:30:00   ADD | LONG | p=0.90853 | lot=0.48 | 
+2025.10.13 04:45:00   CLOSE_BASKET | LONG | p=0.91294 | lot=1.09 | reason=tp_10.0_pips net_pips=12.3
+2025.10.13 05:00:00   PROBE_OPEN | SHORT | p=0.91266 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.13 14:45:00   CLOSE_BASKET | SHORT | p=0.91166 | lot=0.01 | reason=tp_10.0_pips net_pips=10.0
+2025.10.13 16:30:00   PROBE_OPEN | SHORT | p=0.91270 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.13 20:00:00   ADD | SHORT | p=0.91516 | lot=0.24 | 
+2025.10.14 00:05:00   CLOSE_BASKET | SHORT | p=0.91538 | lot=0.25 | reason=tp_10.0_pips net_pips=-3.2
+2025.10.14 01:45:00   PROBE_OPEN | SHORT | p=0.91450 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.14 05:30:00   CLOSE_BASKET | SHORT | p=0.91382 | lot=0.01 | reason=tp_10.0_pips net_pips=6.8
+2025.10.14 16:15:00   PROBE_OPEN | SHORT | p=0.90839 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.14 16:45:00   CLOSE_BASKET | SHORT | p=0.90713 | lot=0.01 | reason=tp_10.0_pips net_pips=12.6
+2025.10.14 17:15:00   PROBE_OPEN | SHORT | p=0.90826 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.14 18:45:00   ADD | SHORT | p=0.91131 | lot=0.24 | 
+2025.10.14 22:45:00   CLOSE_BASKET | SHORT | p=0.91023 | lot=0.25 | reason=tp_10.0_pips net_pips=9.6
+2025.10.15 01:45:00   PROBE_OPEN | SHORT | p=0.91088 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.15 05:30:00   ADD | SHORT | p=0.91354 | lot=0.24 | 
+2025.10.15 20:15:00   CLOSE_BASKET | SHORT | p=0.91261 | lot=0.25 | reason=tp_10.0_pips net_pips=8.2
+2025.10.15 21:15:00   PROBE_OPEN | SHORT | p=0.91390 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.16 03:45:00   CLOSE_BASKET | SHORT | p=0.91079 | lot=0.01 | reason=tp_10.0_pips net_pips=31.1
+2025.10.16 09:15:00   PROBE_OPEN | SHORT | p=0.91144 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.16 14:30:00   ADD | SHORT | p=0.91368 | lot=0.24 | 
+2025.10.16 16:30:00   CLOSE_BASKET | SHORT | p=0.91235 | lot=0.25 | reason=tp_10.0_pips net_pips=12.4
+2025.10.16 18:15:00   PROBE_OPEN | SHORT | p=0.91253 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.16 19:00:00   CLOSE_BASKET | SHORT | p=0.91177 | lot=0.01 | reason=tp_10.0_pips net_pips=7.6
+2025.10.16 23:45:00   PROBE_OPEN | SHORT | p=0.91120 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.17 02:45:00   CLOSE_BASKET | SHORT | p=0.91041 | lot=0.01 | reason=tp_10.0_pips net_pips=7.9
+2025.10.17 09:45:00   PROBE_OPEN | SHORT | p=0.90920 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.17 10:15:00   CLOSE_BASKET | SHORT | p=0.90705 | lot=0.01 | reason=tp_10.0_pips net_pips=21.5
+2025.10.17 14:00:00   PROBE_OPEN | SHORT | p=0.90886 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.17 14:15:00   ADD | SHORT | p=0.91120 | lot=0.24 | 
+2025.10.17 15:15:00   CLOSE_BASKET | SHORT | p=0.91022 | lot=0.25 | reason=tp_10.0_pips net_pips=8.9
+2025.10.17 18:00:00   PROBE_OPEN | SHORT | p=0.91097 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.17 18:30:00   CLOSE_BASKET | SHORT | p=0.91015 | lot=0.01 | reason=tp_10.0_pips net_pips=8.2
+2025.10.17 19:00:00   PROBE_OPEN | SHORT | p=0.91075 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.20 00:15:00   CLOSE_BASKET | SHORT | p=0.91081 | lot=0.01 | reason=tp_10.0_pips net_pips=-0.6
+2025.10.20 01:00:00   PROBE_OPEN | SHORT | p=0.91057 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.20 17:15:00   ADD | SHORT | p=0.91280 | lot=0.24 | 
+2025.10.21 03:45:00   ADD | SHORT | p=0.91506 | lot=0.36 | 
+2025.10.21 08:30:00   CLOSE_BASKET | SHORT | p=0.91326 | lot=0.61 | reason=tp_10.0_pips net_pips=8.4
+2025.10.21 08:45:00   PROBE_OPEN | LONG | p=0.91311 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.21 15:30:00   ADD | LONG | p=0.91121 | lot=0.24 | 
+2025.10.22 04:00:00   ADD | LONG | p=0.90900 | lot=0.36 | 
+2025.10.22 09:45:00   CLOSE_BASKET | LONG | p=0.91116 | lot=0.61 | reason=tp_10.0_pips net_pips=12.2
+2025.10.22 10:00:00   PROBE_OPEN | SHORT | p=0.91064 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.22 11:45:00   CLOSE_BASKET | SHORT | p=0.90978 | lot=0.01 | reason=tp_10.0_pips net_pips=8.6
+2025.10.23 01:00:00   PROBE_OPEN | SHORT | p=0.90774 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.23 10:45:00   ADD | SHORT | p=0.91011 | lot=0.24 | 
+2025.10.24 15:45:00   ADD | SHORT | p=0.91413 | lot=0.36 | 
+2025.10.24 18:00:00   CLOSE_BASKET | SHORT | p=0.91169 | lot=0.61 | reason=tp_10.0_pips net_pips=7.5
+2025.10.24 18:15:00   PROBE_OPEN | SHORT | p=0.91215 | lot=0.01 | gate_l=0 gate_s=1
+2025.10.24 23:30:00   CLOSE_BASKET | SHORT | p=0.91145 | lot=0.01 | reason=tp_10.0_pips net_pips=7.0
+2025.10.27 03:00:00   PROBE_OPEN | LONG | p=0.91349 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.27 10:45:00   CLOSE_BASKET | LONG | p=0.91529 | lot=0.01 | reason=tp_10.0_pips net_pips=18.0
+2025.10.27 21:30:00   PROBE_OPEN | LONG | p=0.91719 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.28 19:00:00   CLOSE_BASKET | LONG | p=0.91834 | lot=0.01 | reason=tp_10.0_pips net_pips=11.5
+2025.10.28 21:45:00   PROBE_OPEN | LONG | p=0.91812 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.29 02:45:00   CLOSE_BASKET | LONG | p=0.91976 | lot=0.01 | reason=tp_10.0_pips net_pips=16.4
+2025.10.29 11:00:00   PROBE_OPEN | LONG | p=0.91984 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.29 16:45:00   ADD | LONG | p=0.91783 | lot=0.24 | 
+2025.10.29 19:15:00   CLOSE_BASKET | LONG | p=0.91898 | lot=0.25 | reason=tp_10.0_pips net_pips=10.7
+2025.10.29 20:15:00   PROBE_OPEN | LONG | p=0.91815 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.29 20:45:00   ADD | LONG | p=0.91597 | lot=0.24 | 
+2025.10.30 02:30:00   CLOSE_BASKET | LONG | p=0.91726 | lot=0.25 | reason=tp_10.0_pips net_pips=12.0
+2025.10.30 06:30:00   PROBE_OPEN | LONG | p=0.91671 | lot=0.01 | gate_l=1 gate_s=0
+2025.10.30 07:00:00   CLOSE_BASKET | LONG | p=0.91816 | lot=0.01 | reason=tp_10.0_pips net_pips=14.5
+2025.10.30 09:45:00   PROBE_OPEN | LONG | p=0.91701 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.03 06:00:00   CLOSE_BASKET | LONG | p=0.91805 | lot=0.01 | reason=tp_10.0_pips net_pips=10.4
+2025.11.03 09:30:00   PROBE_OPEN | LONG | p=0.91805 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.03 11:00:00   CLOSE_BASKET | LONG | p=0.91931 | lot=0.01 | reason=tp_10.0_pips net_pips=12.6
+2025.11.03 15:30:00   PROBE_OPEN | LONG | p=0.91908 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.04 07:45:00   ADD | LONG | p=0.91664 | lot=0.24 | 
+2025.11.04 11:45:00   ADD | LONG | p=0.91445 | lot=0.36 | 
+2025.11.05 03:30:00   ADD | LONG | p=0.91228 | lot=0.48 | 
+2025.11.05 05:45:00   CLOSE_BASKET | LONG | p=0.91563 | lot=1.09 | reason=tp_10.0_pips net_pips=16.1
+2025.11.05 11:45:00   PROBE_OPEN | LONG | p=0.91576 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.05 16:30:00   CLOSE_BASKET | LONG | p=0.91683 | lot=0.01 | reason=tp_10.0_pips net_pips=10.7
+2025.11.05 23:00:00   PROBE_OPEN | LONG | p=0.91782 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.06 17:00:00   ADD | LONG | p=0.91548 | lot=0.24 | 
+2025.11.07 15:45:00   ADD | LONG | p=0.91250 | lot=0.36 | 
+2025.11.10 07:00:00   CLOSE_BASKET | LONG | p=0.91509 | lot=0.61 | reason=tp_10.0_pips net_pips=13.3
+2025.11.10 07:15:00   PROBE_OPEN | SHORT | p=0.91527 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.10 18:00:00   CLOSE_BASKET | SHORT | p=0.91426 | lot=0.01 | reason=tp_10.0_pips net_pips=10.1
+2025.11.10 19:00:00   PROBE_OPEN | SHORT | p=0.91486 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.11 18:00:00   CLOSE_BASKET | SHORT | p=0.91380 | lot=0.01 | reason=tp_10.0_pips net_pips=10.6
+2025.11.11 18:15:00   PROBE_OPEN | LONG | p=0.91435 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.12 09:15:00   CLOSE_BASKET | LONG | p=0.91544 | lot=0.01 | reason=tp_10.0_pips net_pips=10.9
+2025.11.12 09:30:00   PROBE_OPEN | SHORT | p=0.91578 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.13 02:45:00   ADD | SHORT | p=0.91809 | lot=0.24 | 
+2025.11.13 16:45:00   CLOSE_BASKET | SHORT | p=0.91631 | lot=0.25 | reason=tp_10.0_pips net_pips=16.9
+2025.11.13 17:00:00   PROBE_OPEN | LONG | p=0.91729 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.13 18:15:00   CLOSE_BASKET | LONG | p=0.91843 | lot=0.01 | reason=tp_10.0_pips net_pips=11.4
+2025.11.13 20:45:00   PROBE_OPEN | LONG | p=0.91633 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.14 04:15:00   CLOSE_BASKET | LONG | p=0.91781 | lot=0.01 | reason=tp_10.0_pips net_pips=14.8
+2025.11.14 06:30:00   PROBE_OPEN | LONG | p=0.91693 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.14 13:00:00   ADD | LONG | p=0.91487 | lot=0.24 | 
+2025.11.14 17:00:00   CLOSE_BASKET | LONG | p=0.91627 | lot=0.25 | reason=tp_10.0_pips net_pips=13.2
+2025.11.14 20:45:00   PROBE_OPEN | LONG | p=0.91669 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.17 05:30:00   ADD | LONG | p=0.91467 | lot=0.24 | 
+2025.11.17 09:45:00   CLOSE_BASKET | LONG | p=0.91597 | lot=0.25 | reason=tp_10.0_pips net_pips=12.2
+2025.11.17 11:00:00   PROBE_OPEN | LONG | p=0.91491 | lot=0.01 | gate_l=1 gate_s=0
+2025.11.17 18:15:00   ADD | LONG | p=0.91296 | lot=0.24 | 
+2025.11.18 06:00:00   ADD | LONG | p=0.91071 | lot=0.36 | 
+2025.11.19 05:00:00   ADD | LONG | p=0.90855 | lot=0.48 | 
+2025.11.20 06:45:00   CLOSE_BASKET | LONG | p=0.91144 | lot=1.09 | reason=tp_10.0_pips net_pips=11.5
+2025.11.20 07:00:00   PROBE_OPEN | SHORT | p=0.91131 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.20 10:00:00   CLOSE_BASKET | SHORT | p=0.91034 | lot=0.01 | reason=tp_10.0_pips net_pips=9.7
+2025.11.20 12:00:00   PROBE_OPEN | SHORT | p=0.91053 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.20 18:45:00   CLOSE_BASKET | SHORT | p=0.90958 | lot=0.01 | reason=tp_10.0_pips net_pips=9.5
+2025.11.21 02:15:00   PROBE_OPEN | SHORT | p=0.90860 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.21 10:00:00   CLOSE_BASKET | SHORT | p=0.90781 | lot=0.01 | reason=tp_10.0_pips net_pips=7.9
+2025.11.21 11:15:00   PROBE_OPEN | SHORT | p=0.90838 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.21 12:00:00   CLOSE_BASKET | SHORT | p=0.90716 | lot=0.01 | reason=tp_10.0_pips net_pips=12.2
+2025.11.21 14:45:00   PROBE_OPEN | SHORT | p=0.90742 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.21 19:00:00   ADD | SHORT | p=0.90982 | lot=0.24 | 
+2025.11.24 22:45:00   ADD | SHORT | p=0.91204 | lot=0.36 | 
+2025.11.25 13:45:00   CLOSE_BASKET | SHORT | p=0.91046 | lot=0.61 | reason=tp_10.0_pips net_pips=6.3
+2025.11.25 14:45:00   PROBE_OPEN | SHORT | p=0.91103 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.25 16:45:00   CLOSE_BASKET | SHORT | p=0.90962 | lot=0.01 | reason=tp_10.0_pips net_pips=14.1
+2025.11.25 19:00:00   PROBE_OPEN | SHORT | p=0.91045 | lot=0.01 | gate_l=0 gate_s=1
+2025.11.26 02:30:00   ADD | SHORT | p=0.91268 | lot=0.24 | 
+2025.11.26 05:30:00   ADD | SHORT | p=0.91512 | lot=0.36 | 
+2025.12.02 09:15:00   ADD | SHORT | p=0.91739 | lot=0.48 | 
+2025.12.03 08:15:00   ADD | SHORT | p=0.91960 | lot=0.60 | 
+2025.12.04 02:30:00   ADD | SHORT | p=0.92184 | lot=0.72 | 
+2025.12.05 10:15:00   ADD | SHORT | p=0.92453 | lot=0.84 | 
+2025.12.05 19:15:00   CLOSE_BASKET | SHORT | p=0.91925 | lot=3.25 | reason=tp_10.0_pips net_pips=7.6
+2025.12.05 19:30:00   PROBE_OPEN | LONG | p=0.91885 | lot=0.01 | gate_l=1 gate_s=0
+2025.12.08 00:30:00   ADD | LONG | p=0.91859 | lot=0.24 | 
+2025.12.08 01:00:00   ADD | LONG | p=0.91677 | lot=0.36 | 
+2025.12.08 05:00:00   CLOSE_BASKET | LONG | p=0.91855 | lot=0.61 | reason=tp_10.0_pips net_pips=10.3
+2025.12.08 07:15:00   PROBE_OPEN | LONG | p=0.91838 | lot=0.01 | gate_l=1 gate_s=0
+2025.12.08 14:15:00   ADD | LONG | p=0.91602 | lot=0.24 | 
+2025.12.08 19:45:00   CLOSE_BASKET | LONG | p=0.91713 | lot=0.25 | reason=tp_10.0_pips net_pips=10.2
+2025.12.09 01:00:00   PROBE_OPEN | LONG | p=0.91739 | lot=0.01 | gate_l=1 gate_s=0
+2025.12.09 06:45:00   CLOSE_BASKET | LONG | p=0.91907 | lot=0.01 | reason=tp_10.0_pips net_pips=16.8
+2025.12.09 12:30:00   PROBE_OPEN | LONG | p=0.91938 | lot=0.01 | gate_l=1 gate_s=0
+2025.12.10 09:00:00   CLOSE_BASKET | LONG | p=0.92044 | lot=0.01 | reason=tp_10.0_pips net_pips=10.6
+2025.12.10 13:15:00   PROBE_OPEN | LONG | p=0.92052 | lot=0.01 | gate_l=1 gate_s=0
+2025.12.11 05:00:00   ADD | LONG | p=0.91847 | lot=0.24 | 
+2025.12.11 06:30:00   ADD | LONG | p=0.91636 | lot=0.36 | 
+2025.12.11 13:00:00   CLOSE_BASKET | LONG | p=0.91836 | lot=0.61 | reason=tp_10.0_pips net_pips=11.0
+2025.12.11 17:00:00   PROBE_OPEN | LONG | p=0.91738 | lot=0.01 | gate_l=1 gate_s=0
+2025.12.11 19:15:00   CLOSE_BASKET | LONG | p=0.91847 | lot=0.01 | reason=tp_10.0_pips net_pips=10.9
+2025.12.11 22:30:00   PROBE_OPEN | LONG | p=0.91798 | lot=0.01 | gate_l=1 gate_s=0
+2025.12.12 17:30:00   ADD | LONG | p=0.91562 | lot=0.24 | 
+2025.12.16 00:15:00   ADD | LONG | p=0.91454 | lot=0.36 | 
+2025.12.16 03:45:00   ADD | LONG | p=0.91253 | lot=0.48 | 
+2025.12.17 20:45:00   ADD | LONG | p=0.91048 | lot=0.60 | 
+2025.12.22 06:15:00   CLOSE_BASKET | LONG | p=0.91372 | lot=1.69 | reason=tp_10.0_pips net_pips=10.2
+2025.12.22 06:30:00   PROBE_OPEN | SHORT | p=0.91376 | lot=0.01 | gate_l=0 gate_s=1
+2025.12.23 09:15:00   ADD | SHORT | p=0.91634 | lot=0.24 | 
+2025.12.29 05:45:00   ADD | SHORT | p=0.91856 | lot=0.36 | 
+2025.12.29 11:15:00   CLOSE_BASKET | SHORT | p=0.91644 | lot=0.61 | reason=tp_10.0_pips net_pips=11.7
+2025.12.29 11:30:00   PROBE_OPEN | LONG | p=0.91668 | lot=0.01 | gate_l=1 gate_s=0
+2025.12.30 06:15:00   CLOSE_BASKET | LONG | p=0.91782 | lot=0.01 | reason=tp_10.0_pips net_pips=11.4
+2025.12.30 09:45:00   PROBE_OPEN | LONG | p=0.91801 | lot=0.01 | gate_l=1 gate_s=0
