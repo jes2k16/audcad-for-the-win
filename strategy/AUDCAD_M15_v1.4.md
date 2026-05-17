@@ -1,6 +1,6 @@
 # AUDCAD M15 Mean-Reversion EA — Strategy v1.4
 
-**Status**: active
+**Status**: superseded by [AUDCAD_M15_v1.5.md](AUDCAD_M15_v1.5.md) (N-of-4 signal confluence). Set `Min_Confluence_Count=1` in v1.5 to reproduce v1.4 behavior.
 **Last updated**: 2026-05-16
 **Parent**: [AUDCAD_M15_v1.3.md](AUDCAD_M15_v1.3.md)
 **Change scope**: **ergonomics + safer defaults**. ~30 inputs renamed to descriptive snake_case, inline comments reformatted so the MT5 tester panel shows `VariableName: description`, `ProbeLot` split into two clearer inputs, and two default values flipped to make `$1k cent` deployment work out of the box. **No signal, gate, exit, grid, lot-formula, FitCheck, emergency-exit, basket-reconstruction, or risk-math logic changes.**

@@ -19,8 +19,8 @@
 | Min real capital | **$1,000 USD** (cent account at default `Max_Drawdown_Percentage=35`); below this, auto-sizer skips probes |
 | Timeframe | M15 — all signals checked at bar close |
 | Magic numbers | Long `50000051`, Short `50000052` |
-| Active EA | `EA/AUDCAD_M15_v1_4.mq5` |
-| Active strategy | `strategy/AUDCAD_M15_v1.4.md` |
+| Active EA | `EA/AUDCAD_M15_v1_5.mq5` |
+| Active strategy | `strategy/AUDCAD_M15_v1.5.md` |
 | Shadow mode default | `true` — logs only, no real orders until flipped |
 
 ---
@@ -33,7 +33,8 @@
 | v1.1 | `strategy/AUDCAD_M15_v1.1.md` | Added D1 EMA20 HTF gate — veto on new probe opens only; closes unaffected | Superseded |
 | v1.2 | `strategy/AUDCAD_M15_v1.2.md` | Exit changed to +10 pip net basket profit target (weighted avg). Opposite signal no longer closes basket. Single basket at a time (no bidirectional). | Superseded |
 | v1.3 | `strategy/AUDCAD_M15_v1.3.md` | Equity-scaled base lot (closed-form `WC = 44,627` lot-pip ceiling) so a full 10-leg ladder always fits 20% DD. Cent / micro account default. `ProbeLot` becomes optional override. New CSV columns + `[UNIT_SANITY]` / `[WC_CONST]` / `[AUTOSIZE]` log lines. | Superseded |
-| **v1.4** | `strategy/AUDCAD_M15_v1.4.md` | **Ergonomics + safer defaults: ~30 inputs renamed to descriptive snake_case (`Max_Drawdown_Percentage`, `Bollinger_Period`, `Buy_Only_If_RSI_LessThan`, …), inline comments reformatted as `// VariableName: description` so MT5 tester panel shows both. `ProbeLot` split into `Auto_Compute_Lot_Size_Based_On_Equity` (bool) + `Default_Base_Lot_Size` (double). Two default flips: `Abort_If_Standard_Account = true` (cent guard ON), `Max_Drawdown_Percentage = 35` (admits $1k cent vol_min, PROVISIONAL). No mechanics change — identical strategy logic to v1.3.** | **Active** |
+| v1.4 | `strategy/AUDCAD_M15_v1.4.md` | Ergonomics + safer defaults: ~30 inputs renamed to descriptive snake_case (`Max_Drawdown_Percentage`, `Bollinger_Period`, `Buy_Only_If_RSI_LessThan`, …), inline comments reformatted as `// VariableName: description` so MT5 tester panel shows both. `ProbeLot` split into `Auto_Compute_Lot_Size_Based_On_Equity` (bool) + `Default_Base_Lot_Size` (double). Two default flips: `Abort_If_Standard_Account = true` (cent guard ON), `Max_Drawdown_Percentage = 35` (admits $1k cent vol_min, PROVISIONAL). No mechanics change — identical strategy logic to v1.3. | Superseded |
+| **v1.5** | `strategy/AUDCAD_M15_v1.5.md` | **Signal confluence: BUY/SELL fire only when `≥ Min_Confluence_Count` (default 3) of the 4 arms pass, instead of any-of-4 OR. RSI direction gate unchanged. New input `Min_Confluence_Count`; setting it to 1 reproduces v1.4 exactly. SIGNAL diag log adds `buy_arms / sell_arms / min` fields. No gate/exit/grid/sizing changes — bit-for-bit identical to v1.4 otherwise.** | **Active** |
 
 ---
 
@@ -41,7 +42,7 @@
 
 | Rule | Value | Source |
 |---|---|---|
-| Entry signal | RSI(14) direction gate + any of: StochRSI≤20/≥60, BB%B≤0.10/≥0.90, RSI≤40/≥60, sell near 500-bar swing high, buy near 500-bar swing low | v1 §1, validated G1 91% / G2 85% |
+| Entry signal | RSI(14) direction gate + **≥ `Min_Confluence_Count` (default 3) of 4** arms agree: StochRSI≤20/≥60, BB%B≤0.10/≥0.90, RSI≤40/≥60, swing-low/high ≤ 50 pips | v1.5 §1-2 |
 | Grid step | 22 pips from last entry price, checked at M15 close | G5 median confirmed |
 | Ladder multipliers | `[1, 24, 36, 48, 60, 72, 84, 96, 108, 120]` (m(1)=1, m(n≥2)=12·N) — locked shape | G7 confirmed Apr–May era |
 | Lot ladder base | **Auto-computed** at probe-open: `base = floor( (equity × Max_Drawdown_Percentage%) / (44,627 × PipValPerLot()), vol_step )`. Cached on basket. `Auto_Compute_Lot_Size_Based_On_Equity = false` + `Default_Base_Lot_Size > 0` forces fixed override. | v1.3 §2, v1.4 §3 |
@@ -56,8 +57,8 @@
 
 ## Signal rules (v1 §1) — reference card
 
-**BUY**: `RSI < 50` AND (`StochRSI_K ≤ 20` OR `BB%B ≤ 0.10` OR `RSI ≤ 40` OR `dist_500bar_low ≤ 50 pips`)
-**SELL**: `RSI > 50` AND (`StochRSI_K ≥ 60` OR `BB%B ≥ 0.90` OR `RSI ≥ 60` OR `dist_500bar_high ≤ 50 pips`)
+**BUY**:  `RSI < 50` AND count(`StochRSI_K ≤ 20`, `BB%B ≤ 0.10`, `RSI ≤ 40`, `dist_500bar_low ≤ 50 pips`)  ≥ `Min_Confluence_Count`
+**SELL**: `RSI > 50` AND count(`StochRSI_K ≥ 60`, `BB%B ≥ 0.90`, `RSI ≥ 60`, `dist_500bar_high ≤ 50 pips`) ≥ `Min_Confluence_Count`
 
 All conditions on the **last completed M15 bar** (shift=1).
 
@@ -122,13 +123,15 @@ strategy/
   AUDCAD_M15_v1.1.md          + D1 EMA20 HTF gate (superseded)
   AUDCAD_M15_v1.2.md          + pip-target exit, single basket (superseded)
   AUDCAD_M15_v1.3.md          + equity-scaled base lot, cent profile (superseded)
-  AUDCAD_M15_v1.4.md          + descriptive input names, ProbeLot split, safer defaults (ACTIVE)
+  AUDCAD_M15_v1.4.md          + descriptive input names, ProbeLot split, safer defaults (superseded)
+  AUDCAD_M15_v1.5.md          + N-of-4 signal confluence (Min_Confluence_Count, default 3) (ACTIVE)
 
 EA/
   AUDCAD_M15_v1_1.mq5         v1.1 EA (superseded)
   AUDCAD_M15_v1_2.mq5         v1.2 EA (superseded)
   AUDCAD_M15_v1_3.mq5         v1.3 EA (superseded)
-  AUDCAD_M15_v1_4.mq5         v1.4 EA (ACTIVE)
+  AUDCAD_M15_v1_4.mq5         v1.4 EA (superseded)
+  AUDCAD_M15_v1_5.mq5         v1.5 EA (ACTIVE)
 
 back test result/
   v1.2_2025_result.log              2025 tester journal (UTF-16, 2 passes inside)
@@ -147,7 +150,9 @@ back test result/
   v1.4_2024_result_v1.md            v1.4 cent $1k full 2024 analysis (−18.5%) — 1 L8 emergency Apr, frozen Apr–Dec
   v1.4_2025_result_v1.log           v1.4 cent $1k full 2025, gate ON
   v1.4_2025_result_v1.md            v1.4 cent $1k full 2025 analysis (+107.47%) — 0 emergencies, gate added +33.89 pp vs gate-OFF
-  summary.md                        Running summary of all v1.4 cent runs (2023–2025)
+  v1.5_July2025_result_v1.log       v1.5 first run, cent $1k, **July 2024 only** (filename typo says 2025), Min_Confluence=3
+  v1.5_July2025_result_v1.md        v1.5 July 2024 analysis (−24.83%) — confluence blocked Jul 15 20:15 hair-trigger AS PREDICTED, but Jul 18 10:30 fatal basket (3 arms legitimately agreed) still hit emergency. Lesson: confluence defends against arm noise, not multi-day directional moves
+  summary.md                        Running summary of all v1.4/v1.5 cent runs
 
 data/
   AUDCAD_M15.csv              Feb M15 OHLC (Jan 2 – Feb 27, 2026)
@@ -168,6 +173,15 @@ AUDCAD_History_05102026_to_date.csv  Full position history (180+ rows)
 
 ## Open questions (next session priorities)
 
+0. **v1.5 confluence — partial result, structural lesson learned**
+   - July 2024 single-month test confirmed: `Min_Confluence_Count=3` **blocked the Jul 15 20:15 hair-trigger as predicted** (`buy_arms=1 < min=3`). See [v1.5_July2025_result_v1.md](back%20test%20result/v1.5_July2025_result_v1.md).
+   - BUT: a different basket (Jul 18 10:30, 3 arms legit agreed: StochRSI+BB%B+swing-low) ran into the same multi-day drop and hit emergency on Jul 25. Final eq $751.66, frozen.
+   - **Lesson**: confluence defends against single-arm noise, NOT against multi-day directional moves with the HTF gate aligned wrong. D1 EMA20 said `gate_long=1` throughout the drop.
+   - **Next priorities**:
+     - **v1.6 HTF gate redesign** — D1 EMA20 lags multi-day drops. Try H4 EMA20, H1 EMA50, or a slope check (D1 EMA20 must be *rising*, not just price-above-EMA). Biggest expected lever.
+     - **`Min_Confluence_Count=4` sweep** — Jul 18 10:30 had RSI=46.8 (not ≤40), so 4-arm rule would have blocked it. Test 2023/2024/2025 full-year at value 4.
+     - **Parity check still pending**: `Min_Confluence_Count=1` on full 2025 should reproduce v1.4 $2,074.72.
+     - **Full-year v1.5 runs still pending** for 2023, 2024, 2025.
 1. **v1.4 G12 parity replay** — re-run v4 backtest (`AUDCADm#`, $1k, full 2025, **gate OFF**, MaxDD=35) on v1.4 EA. Final balance must match v1.3 v4's $1,735.84 ±$0.01. Proves renaming touched no logic.
 2. **G13** — v1.4 standard-account regression: `Auto_Compute_Lot_Size_Based_On_Equity=false`, `Default_Base_Lot_Size=0.01`, `Abort_If_Standard_Account=false`, `Max_Drawdown_Percentage=20` on `AUDCAD#` 2025 → identical to v1.2 +$6,567.29 baseline.
 3. **`Max_Drawdown_Percentage=35` is too loose for bad years** — 2023 and 2024 both end in permanent freeze (equity < $963 vol_min floor after L8 emergency). Re-run both years at `MaxDD=20` and `MaxDD=25` to find the cap that limits per-emergency loss enough to stay above the vol_min floor. Key question: does a tighter cap prevent the freeze, or just delay it?
