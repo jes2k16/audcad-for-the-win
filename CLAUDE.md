@@ -41,7 +41,7 @@
 
 | Rule | Value | Source |
 |---|---|---|
-| Entry signal | RSI(14) direction gate + any of: StochRSI≤20/≥60, BB%B≤0.10/≥0.90, RSI≤40/≥60, sell near 500-bar swing high | v1 §1, validated G1 91% / G2 85% |
+| Entry signal | RSI(14) direction gate + any of: StochRSI≤20/≥60, BB%B≤0.10/≥0.90, RSI≤40/≥60, sell near 500-bar swing high, buy near 500-bar swing low | v1 §1, validated G1 91% / G2 85% |
 | Grid step | 22 pips from last entry price, checked at M15 close | G5 median confirmed |
 | Ladder multipliers | `[1, 24, 36, 48, 60, 72, 84, 96, 108, 120]` (m(1)=1, m(n≥2)=12·N) — locked shape | G7 confirmed Apr–May era |
 | Lot ladder base | **Auto-computed** at probe-open: `base = floor( (equity × Max_Drawdown_Percentage%) / (44,627 × PipValPerLot()), vol_step )`. Cached on basket. `Auto_Compute_Lot_Size_Based_On_Equity = false` + `Default_Base_Lot_Size > 0` forces fixed override. | v1.3 §2, v1.4 §3 |
@@ -56,7 +56,7 @@
 
 ## Signal rules (v1 §1) — reference card
 
-**BUY**: `RSI < 50` AND (`StochRSI_K ≤ 20` OR `BB%B ≤ 0.10` OR `RSI ≤ 40`)
+**BUY**: `RSI < 50` AND (`StochRSI_K ≤ 20` OR `BB%B ≤ 0.10` OR `RSI ≤ 40` OR `dist_500bar_low ≤ 50 pips`)
 **SELL**: `RSI > 50` AND (`StochRSI_K ≥ 60` OR `BB%B ≥ 0.90` OR `RSI ≥ 60` OR `dist_500bar_high ≤ 50 pips`)
 
 All conditions on the **last completed M15 bar** (shift=1).
@@ -101,7 +101,11 @@ Emergency (any tick): basket floating loss ≥ Max_Drawdown_Percentage equity �
 | G9 v1.2 P/L improvement | v1.2 ≥ master P/L | Superseded by v1.3 backtest +13.13% on $50k standard 2025 — see [back test result/v1.2_2025_result.md](back%20test%20result/v1.2_2025_result.md). |
 | G10 `[UNIT_SANITY]` log (XM cent `AUDCADm#`) | `contract_size=1000`, `pv≈0.0695`, `vol_min=0.10`, tag `cent` | **PASS** — see [v4 log](back%20test%20result/v1.3_2025_result_v4%2835DD%29.log) |
 | G11 `[AUTOSIZE]` projection at $1k cent | At default `Max_Drawdown_Percentage=35`: `base=0.11`, `wc_pct≈34` (original 20%-cap target `base=0.06` superseded — broker `vol_min=0.10`, not `0.01`) | **PASS** (v4 log) |
-| G12 $1k cent 2025 replay | Max DD ≤ chosen cap, baskets close at TP, recovery after emergency | **PASS** — v4: 0 BLOCK_ADD, 1 absorbed L8 emergency, +73.58% net — see [v4 review](back%20test%20result/v1.3_2025_result_v4%2835DD%29.md) |
+| G12 $1k cent 2025 replay (gate OFF) | Max DD ≤ chosen cap, baskets close at TP, recovery after emergency | **PASS** — v1.3 v4: 0 BLOCK_ADD, 1 absorbed L8 emergency, +73.58% net — see [v4 review](back%20test%20result/v1.3_2025_result_v4%2835DD%29.md) |
+| G12 $1k cent 2025 replay (gate ON, v1.4) | Same criteria + gate active | **PASS** — v1.4 v1: 0 emergencies, 0 BLOCK_ADD, +107.47% — see [v1.4 2025 result](back%20test%20result/v1.4_2025_result_v1.md). Gate eliminated April emergency vs gate-OFF run (+33.89 pp). |
+| G12 $1k cent 2025 parity (v1.4 gate OFF = v1.3 v4) | Final balance = $1,735.84 ± $0.01 | **Not run** — 2025 v1.4 run used gate=ON; gate=OFF parity test still pending |
+| G14 $1k cent 2024 replay | Same criteria as G12 | **FAIL** — v1.4 v1: 1 L8 emergency Apr 9, equity $815 (below $963 vol_min floor) → EA frozen Apr–Dec. −18.5% net — see [v1.4 2024 result](back%20test%20result/v1.4_2024_result_v1.md) |
+| G15 $1k cent 2023 replay | Same criteria as G12 | **FAIL** — v1.4 v1: 2 L8 emergencies Jun 16 + Jun 23, equity $838 → EA frozen Jul–Dec. −16.18% net — see [v1.4 2023 result](back%20test%20result/v1.4_2023_result_v1.md) |
 | G13 v1.4 standard-account regression | v1.4 with `Auto_Compute_Lot_Size_Based_On_Equity=false`, `Default_Base_Lot_Size=0.01`, `Abort_If_Standard_Account=false`, `Max_Drawdown_Percentage=20` on `AUDCAD#` 2025 → matches v1.2 +$6,567.29 baseline | **Not started** |
 
 ---
@@ -137,6 +141,13 @@ back test result/
   v1.3_2025_result_v3.md            v1.3 standard $100k full 2025 analysis (+48.06%)
   v1.3_2025_result_v4(35DD).log     v1.3 first cent-profile run at $1k, MaxDDPct=35
   v1.3_2025_result_v4(35DD).md      v1.3 cent $1k full 2025 analysis (+73.58%) — empirical basis for v1.4 35% default
+  v1.4_2023_result_v1.log           v1.4 cent $1k full 2023, gate ON
+  v1.4_2023_result_v1.md            v1.4 cent $1k full 2023 analysis (−16.18%) — 2 L8 emergencies Jun, frozen Jul–Dec
+  v1.4_2024_result_v1.log           v1.4 cent $1k full 2024, gate ON
+  v1.4_2024_result_v1.md            v1.4 cent $1k full 2024 analysis (−18.5%) — 1 L8 emergency Apr, frozen Apr–Dec
+  v1.4_2025_result_v1.log           v1.4 cent $1k full 2025, gate ON
+  v1.4_2025_result_v1.md            v1.4 cent $1k full 2025 analysis (+107.47%) — 0 emergencies, gate added +33.89 pp vs gate-OFF
+  summary.md                        Running summary of all v1.4 cent runs (2023–2025)
 
 data/
   AUDCAD_M15.csv              Feb M15 OHLC (Jan 2 – Feb 27, 2026)
@@ -157,10 +168,11 @@ AUDCAD_History_05102026_to_date.csv  Full position history (180+ rows)
 
 ## Open questions (next session priorities)
 
-1. **v1.4 G12 parity replay** — re-run v4 backtest (`AUDCADm#`, $1k, full 2025, gate off, MaxDD=35) on the freshly-renamed v1.4 EA. Final balance must match v4's $1,735.84 ±$0.01. Any divergence means a rename touched logic, not just naming.
-2. **G13** — v1.4 standard-account regression: `Auto_Compute_Lot_Size_Based_On_Equity=false`, `Default_Base_Lot_Size=0.01`, `Abort_If_Standard_Account=false`, `Max_Drawdown_Percentage=20` on `AUDCAD#` 2025 → identical to v1.2 +$6,567.29 baseline (proves v1.4 is a clean superset).
-3. **`Max_Drawdown_Percentage=35` default tuning** — currently PROVISIONAL. Run gate-ON variant of v4 setup to isolate whether the April emergency was avoidable. Run `MaxDD=30` to test smaller cap. Multi-broker / multi-year sweep to validate the 35 number.
-4. **G8** — deploy v1.4 to XM cent demo in shadow mode for ≥ 2 weeks; compare predicted vs actual master probes.
-5. **Pip target calibration** — 10 pips may be too tight for 3+ leg baskets; v1.2 2025 result shows 16 closes with negative net_pips, v4 shows 22 of them (-103 pips total). Worth a focused analysis pass.
-6. **Skipped signal audit** — log signals ignored while basket is open; check if missed entries cost too much (still open from v1.2).
-7. **CSV format migration** — v1.3/v1.4 append two columns (`base_lot`, `account_type_tag`). Update `scripts/parse_v12_2025.py` when a v1.4 log is first analyzed at scale.
+1. **v1.4 G12 parity replay** — re-run v4 backtest (`AUDCADm#`, $1k, full 2025, **gate OFF**, MaxDD=35) on v1.4 EA. Final balance must match v1.3 v4's $1,735.84 ±$0.01. Proves renaming touched no logic.
+2. **G13** — v1.4 standard-account regression: `Auto_Compute_Lot_Size_Based_On_Equity=false`, `Default_Base_Lot_Size=0.01`, `Abort_If_Standard_Account=false`, `Max_Drawdown_Percentage=20` on `AUDCAD#` 2025 → identical to v1.2 +$6,567.29 baseline.
+3. **`Max_Drawdown_Percentage=35` is too loose for bad years** — 2023 and 2024 both end in permanent freeze (equity < $963 vol_min floor after L8 emergency). Re-run both years at `MaxDD=20` and `MaxDD=25` to find the cap that limits per-emergency loss enough to stay above the vol_min floor. Key question: does a tighter cap prevent the freeze, or just delay it?
+4. **Post-emergency structural fix** — both 2023 and 2024 hit the same dead end: equity drops below ~$963, EA skips every probe forever, no recovery path. Options: (a) lower the min equity threshold by reducing MaxDD further, (b) add a `Min_Equity_Restart` input that allows the user to inject capital and reset, (c) add a post-emergency reduced-lot mode using `Default_Base_Lot_Size` override. Without a fix, any year with a badly-timed emergency permanently kills the account.
+5. **G8** — deploy v1.4 to XM cent demo in shadow mode for ≥ 2 weeks; compare predicted vs actual master probes.
+6. **Pip target calibration** — 2025 gate-ON shows 16 negative-pips closes (vs 22 in gate-OFF v4). Spread at execution is the cause. Try TP=12 or TP=15 to reduce these. Risk: fewer closes hit, longer basket hold times.
+7. **Skipped signal audit** — log signals ignored while basket is open; check if missed entries cost too much (still open from v1.2).
+8. **CSV format migration** — v1.3/v1.4 append two columns (`base_lot`, `account_type_tag`). Update `scripts/parse_v12_2025.py` when a v1.4 log is first analyzed at scale.

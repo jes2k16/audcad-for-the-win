@@ -48,6 +48,8 @@ input int             Stoch_RSI_Lookback       = 14;           // Stoch_RSI_Look
 input int             Stoch_RSI_Smooth         = 3;            // Stoch_RSI_Smooth: StochRSI %K smoothing
 input int             Swing_High_Bars          = 500;          // Swing_High_Bars: bars for rolling swing-high lookup
 input double          Swing_High_DistPips      = 50.0;         // Swing_High_DistPips: SELL fires if within this many pips of swing high
+input int             Swing_Low_Bars           = 500;          // Swing_Low_Bars: bars for rolling swing-low lookup
+input double          Swing_Low_DistPips       = 50.0;         // Swing_Low_DistPips: BUY fires if within this many pips of swing low
 
 // §1 BUY thresholds
 input double          Buy_Only_If_RSI_LessThan                = 50.0;  // Buy_Only_If_RSI_LessThan: BUY direction gate (RSI must be below this)
@@ -125,6 +127,13 @@ double g_vol_step;
 double g_wc_lotpips     = 0.0;   // worst-case lot-pips per unit base lot (computed at init)
 double g_contract_size  = 0.0;   // SYMBOL_TRADE_CONTRACT_SIZE
 string g_account_type_tag = "?"; // "cent" | "standard" — heuristic from contract size
+
+// v1.4 diag: last-bar indicator readings cached for SIGNAL log line
+double g_last_rsi           = 0.0;
+double g_last_stoch         = 0.0;
+double g_last_pctb          = 0.0;
+double g_last_dist_swing    = 0.0;   // distance to swing HIGH (for SELL)
+double g_last_dist_swing_lo = 0.0;   // distance to swing LOW  (for BUY)
 
 int    g_log = INVALID_HANDLE;
 string g_sym = "";   // resolved symbol name
@@ -458,10 +467,26 @@ bool EvalSignal(bool &buy_f, bool &sell_f)
         dist_swing = (hi_arr[idx] - close) / g_pip;
     }
 
+    double lo_arr[];
+    ArraySetAsSeries(lo_arr, true);
+    double dist_swing_low = 9999.0;
+    if(CopyLow(g_sym, Signal_Timeframe, 1, Swing_Low_Bars, lo_arr) == Swing_Low_Bars)
+    {
+        int idx = ArrayMinimum(lo_arr, 0, WHOLE_ARRAY);
+        dist_swing_low = (close - lo_arr[idx]) / g_pip;
+    }
+
+    g_last_rsi           = rsi14;
+    g_last_stoch         = stoch_k;
+    g_last_pctb          = pctb;
+    g_last_dist_swing    = dist_swing;
+    g_last_dist_swing_lo = dist_swing_low;
+
     if(rsi14 < Buy_Only_If_RSI_LessThan)
-        buy_f = (stoch_k <= Buy_Fire_If_StochRSI_K_LessThan_EqualTo ||
-                 pctb    <= Buy_Fire_If_Bollinger_LessThan_EqualTo  ||
-                 rsi14   <= Buy_Fire_If_RSI_LessThan_EqualTo);
+        buy_f = (stoch_k        <= Buy_Fire_If_StochRSI_K_LessThan_EqualTo ||
+                 pctb           <= Buy_Fire_If_Bollinger_LessThan_EqualTo  ||
+                 rsi14          <= Buy_Fire_If_RSI_LessThan_EqualTo        ||
+                 dist_swing_low <= Swing_Low_DistPips);
 
     if(rsi14 > Sell_Only_If_RSI_GreaterThan)
         sell_f = (stoch_k    >= Sell_Fire_If_StochRSI_K_GreaterThan_EqualTo ||
@@ -812,13 +837,17 @@ void OnBarClose()
     {
         double eq  = AccountInfoDouble(ACCOUNT_EQUITY);
         string sig = buy_f ? "BUY" : (sell_f ? "SELL" : "none");
+        string arm = StringFormat("rsi=%.1f stoch=%.1f pctb=%.2f swhi=%.0f swlo=%.0f",
+                                  g_last_rsi, g_last_stoch, g_last_pctb,
+                                  g_last_dist_swing, g_last_dist_swing_lo);
         WriteLog("SIGNAL", sig, iClose(g_sym,Signal_Timeframe,1),
                  0, eq, 0, 0, 0, 0,
                  "buy=" + (buy_f?"1":"0") +
                  " sell=" + (sell_f?"1":"0") +
                  " gl=" + (g_gate_long?"1":"0") +
                  " gs=" + (g_gate_short?"1":"0") +
-                 " bsk=" + (g_long.active?"LONG":g_short.active?"SHORT":"none"));
+                 " bsk=" + (g_long.active?"LONG":g_short.active?"SHORT":"none") +
+                 " | " + arm);
     }
 
     RunTree(buy_f, sell_f);
