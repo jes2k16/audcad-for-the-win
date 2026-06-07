@@ -19,8 +19,8 @@
 | Min real capital | **$1,000 USD** (cent account at default `Max_Drawdown_Percentage=35`); below this, auto-sizer skips probes |
 | Timeframe | M15 — all signals checked at bar close |
 | Magic numbers | Long `50000051`, Short `50000052` |
-| Active EA | `EA/AUDCAD_M15_v1_5.mq5` |
-| Active strategy | `strategy/AUDCAD_M15_v1.5.md` |
+| Active EA | `EA/AUDCAD_M15_v1_6.mq5` |
+| Active strategy | `strategy/AUDCAD_M15_v1.6.md` |
 | Shadow mode default | `true` — logs only, no real orders until flipped |
 
 ---
@@ -34,7 +34,8 @@
 | v1.2 | `strategy/AUDCAD_M15_v1.2.md` | Exit changed to +10 pip net basket profit target (weighted avg). Opposite signal no longer closes basket. Single basket at a time (no bidirectional). | Superseded |
 | v1.3 | `strategy/AUDCAD_M15_v1.3.md` | Equity-scaled base lot (closed-form `WC = 44,627` lot-pip ceiling) so a full 10-leg ladder always fits 20% DD. Cent / micro account default. `ProbeLot` becomes optional override. New CSV columns + `[UNIT_SANITY]` / `[WC_CONST]` / `[AUTOSIZE]` log lines. | Superseded |
 | v1.4 | `strategy/AUDCAD_M15_v1.4.md` | Ergonomics + safer defaults: ~30 inputs renamed to descriptive snake_case (`Max_Drawdown_Percentage`, `Bollinger_Period`, `Buy_Only_If_RSI_LessThan`, …), inline comments reformatted as `// VariableName: description` so MT5 tester panel shows both. `ProbeLot` split into `Auto_Compute_Lot_Size_Based_On_Equity` (bool) + `Default_Base_Lot_Size` (double). Two default flips: `Abort_If_Standard_Account = true` (cent guard ON), `Max_Drawdown_Percentage = 35` (admits $1k cent vol_min, PROVISIONAL). No mechanics change — identical strategy logic to v1.3. | Superseded |
-| **v1.5** | `strategy/AUDCAD_M15_v1.5.md` | **Signal confluence: BUY/SELL fire only when `≥ Min_Confluence_Count` (default 3) of the 4 arms pass, instead of any-of-4 OR. RSI direction gate unchanged. New input `Min_Confluence_Count`; setting it to 1 reproduces v1.4 exactly. SIGNAL diag log adds `buy_arms / sell_arms / min` fields. No gate/exit/grid/sizing changes — bit-for-bit identical to v1.4 otherwise.** | **Active** |
+| v1.5 | `strategy/AUDCAD_M15_v1.5.md` | Signal confluence: BUY/SELL fire only when `≥ Min_Confluence_Count` (default 3) of the 4 arms pass, instead of any-of-4 OR. RSI direction gate unchanged. New input `Min_Confluence_Count`; setting it to 1 reproduces v1.4 exactly. SIGNAL diag log adds `buy_arms / sell_arms / min` fields. No gate/exit/grid/sizing changes — bit-for-bit identical to v1.4 otherwise. | Superseded |
+| **v1.6** | `strategy/AUDCAD_M15_v1.6.md` | **ATR ladder pause: while a basket is open, grid-leg adds are PAUSED during fast (high-vol) moves and resumed once volatility normalizes. Metric `ATR(14)/ATR(100)` on M15; pause at ratio ≥ `ATR_Pause_Ratio` (default 1.8); HYBRID resume (ratio ≤ `ATR_Resume_Ratio` default 1.2 for `ATR_Resume_Confirm_Bars` default 3 consecutive bars). Resume adds one leg at the stabilized price (re-baseline). Emergency-DD + TP close stay live during pause. New inputs `Enable_ATR_Pause` + 6 ATR knobs; new log events `ATR_PAUSE / ATR_RESUME / ADD_PAUSED`. `Enable_ATR_Pause=false` reproduces v1.5 exactly. See [plans/4. ATR Integration.md](plans/4.%20ATR%20Integration.md).** | **Active** |
 
 ---
 
@@ -52,6 +53,7 @@
 | Exit | Basket closes when `current price ≥ wavg + 10 pips` (buy) or `≤ wavg − 10 pips` (sell) | v1.2 §2 |
 | One basket at a time | No bidirectional; active basket blocks all new probes | v1.2 §2 |
 | DD cap | **35% equity** (v1.4 default, raised from 20%, PROVISIONAL) — emergency market close + block-add forward check + closed-form pre-trade sizing | plans/1 §9, v1.3 §2, v1.4 §4.2 |
+| ATR ladder pause (v1.6) | While a basket is open, **grid-leg adds pause** when `ATR(14)/ATR(100)` on M15 ≥ `ATR_Pause_Ratio` (default 1.8, + `ATR_Pause_Min_Pips` floor); resume after ratio ≤ `ATR_Resume_Ratio` (default 1.2) for `ATR_Resume_Confirm_Bars` (default 3) consecutive bars; resume adds one leg at the stabilized price (re-baseline). Emergency-DD + TP never paused. `Enable_ATR_Pause=false` = v1.5. PROVISIONAL thresholds. | v1.6 §2-5, plans/4 |
 
 ---
 
@@ -74,6 +76,7 @@ On every M15 bar close:
 IF basket IS open:
     1. Check close target → if wavg ± TP_Basket_If_Total_Pips_GreaterThan_EqualTo hit → close all legs
     2. Else check grid add → if price moved Grid_Step_Pips adverse → add next leg (uses cached base)
+       (v1.6) UNLESS ATR pause is active (ATR(14)/ATR(100) ≥ ATR_Pause_Ratio) → skip add, don't advance last_price
     (signals are ignored while a basket is open)
 
 IF NO basket open:
@@ -108,6 +111,8 @@ Emergency (any tick): basket floating loss ≥ Max_Drawdown_Percentage equity �
 | G14 $1k cent 2024 replay | Same criteria as G12 | **FAIL** — v1.4 v1: 1 L8 emergency Apr 9, equity $815 (below $963 vol_min floor) → EA frozen Apr–Dec. −18.5% net — see [v1.4 2024 result](back%20test%20result/v1.4_2024_result_v1.md) |
 | G15 $1k cent 2023 replay | Same criteria as G12 | **FAIL** — v1.4 v1: 2 L8 emergencies Jun 16 + Jun 23, equity $838 → EA frozen Jul–Dec. −16.18% net — see [v1.4 2023 result](back%20test%20result/v1.4_2023_result_v1.md) |
 | G13 v1.4 standard-account regression | v1.4 with `Auto_Compute_Lot_Size_Based_On_Equity=false`, `Default_Base_Lot_Size=0.01`, `Abort_If_Standard_Account=false`, `Max_Drawdown_Percentage=20` on `AUDCAD#` 2025 → matches v1.2 +$6,567.29 baseline | **Not started** |
+| G16 v1.6 parity (`Enable_ATR_Pause=false` = v1.5) | 2025 full year, `Enable_ATR_Pause=false`, fixed 0.10, Min_Conf=4, Max_Level=6, step=30, $2k → must reproduce v1.5_2025_2k_v3 exactly ($2,137.14) | **Not started** |
+| G17 v1.6 ATR pause hard-year | 2024 + 2023 full year, `Enable_ATR_Pause=true`, fixed 0.30, Min_Conf=4, Max_Level=6, step=30, $2k → fewer/zero emergencies vs v1.5 v5 (2024 −6.35%, 1 emerg). Verify `ATR_PAUSE` engaged through Jul-2024 drop | **Not started** |
 
 ---
 
@@ -117,6 +122,8 @@ Emergency (any tick): basket floating loss ≥ Max_Drawdown_Percentage equity �
 plans/
   1.initial requirements.md   Locked basket mechanics, 20% DD cap, lot conventions
   2.Strategy.md               900-line research trail; Sections 14.9b, 13.X, 14.9f canonical
+  3. Grid ladder lot size example.md   Lot ladder side-by-side (auto vs override) + signal reference
+  4. ATR Integration.md        v1.6 ATR ladder pause design + backtest matrix
 
 strategy/
   AUDCAD_M15_v1.md            Base signal + grid + lot ladder (superseded)
@@ -124,14 +131,16 @@ strategy/
   AUDCAD_M15_v1.2.md          + pip-target exit, single basket (superseded)
   AUDCAD_M15_v1.3.md          + equity-scaled base lot, cent profile (superseded)
   AUDCAD_M15_v1.4.md          + descriptive input names, ProbeLot split, safer defaults (superseded)
-  AUDCAD_M15_v1.5.md          + N-of-4 signal confluence (Min_Confluence_Count, default 3) (ACTIVE)
+  AUDCAD_M15_v1.5.md          + N-of-4 signal confluence (Min_Confluence_Count, default 3) (superseded)
+  AUDCAD_M15_v1.6.md          + ATR ladder pause (Enable_ATR_Pause + 6 knobs) (ACTIVE)
 
 EA/
   AUDCAD_M15_v1_1.mq5         v1.1 EA (superseded)
   AUDCAD_M15_v1_2.mq5         v1.2 EA (superseded)
   AUDCAD_M15_v1_3.mq5         v1.3 EA (superseded)
   AUDCAD_M15_v1_4.mq5         v1.4 EA (superseded)
-  AUDCAD_M15_v1_5.mq5         v1.5 EA (ACTIVE)
+  AUDCAD_M15_v1_5.mq5         v1.5 EA (superseded)
+  AUDCAD_M15_v1_6.mq5         v1.6 EA — ATR ladder pause (ACTIVE)
 
 back test result/
   v1.2_2025_result.log              2025 tester journal (UTF-16, 2 passes inside)
