@@ -81,11 +81,12 @@ input int             Grid_Max_Level_To_SL     = 10;           // Grid_Max_Level
 
 // §3.6 ATR ladder pause — v1.6
 input bool            Enable_ATR_Pause          = true;        // Enable_ATR_Pause: pause grid-leg adds during fast (high-volatility) moves. false = bit-for-bit identical to v1.5
-input int             ATR_Period_Fast           = 14;          // ATR_Period_Fast: short-term ATR period (reacts fast) on Signal_Timeframe
-input int             ATR_Period_Slow           = 100;         // ATR_Period_Slow: baseline ATR period (~1-day norm) on Signal_Timeframe
+input ENUM_TIMEFRAMES ATR_Timeframe             = PERIOD_H1;   // ATR_Timeframe: timeframe for ATR calculation. PERIOD_M15=M15 (original), PERIOD_H1=H1, PERIOD_H4=H4. Higher TF smooths out M15 noise; H1 catches sustained session volatility without false-triggering on single M15 spikes
+input int             ATR_Period_Fast           = 14;          // ATR_Period_Fast: short-term ATR period on ATR_Timeframe (H1 default: 14 bars = ~14 hours)
+input int             ATR_Period_Slow           = 100;         // ATR_Period_Slow: baseline ATR period on ATR_Timeframe (H1 default: 100 bars = ~4 days norm)
 input double          ATR_Pause_Ratio           = 1.8;         // ATR_Pause_Ratio: pause adds when ATR_fast/ATR_slow >= this
 input double          ATR_Resume_Ratio          = 1.2;         // ATR_Resume_Ratio: calm threshold; ratio must fall to <= this to be eligible to resume (hysteresis dead-band)
-input int             ATR_Resume_Confirm_Bars   = 3;           // ATR_Resume_Confirm_Bars: consecutive calm bars (ratio <= resume) required before adds resume
+input int             ATR_Resume_Confirm_Bars   = 3;           // ATR_Resume_Confirm_Bars: consecutive calm bars (ratio <= resume, on ATR_Timeframe) required before adds resume
 input double          ATR_Pause_Min_Pips        = 6.0;         // ATR_Pause_Min_Pips: only pause if ATR_fast (in pips) also exceeds this; 0 disables the floor
 
 // §4 Lot sizing — v1.4 (ProbeLot split)
@@ -101,6 +102,7 @@ input double          Fit_Check_Pad_Pips       = 5.0;          // Fit_Check_Pad_
 input bool            Enable_HTF_Gate          = true;         // Enable_HTF_Gate: false = no HTF trend filter; both directions always allowed
 input ENUM_TIMEFRAMES GateTimeframe            = PERIOD_D1;    // GateTimeframe: HTF trend filter timeframe
 input int             GateEMA_Period           = 20;           // GateEMA_Period: EMA period on GateTimeframe
+input double          Max_EMA200_Gap_Pips      = 150.0;       // Max_EMA200_Gap_Pips: max pips from Gate EMA for new probes (0=off). BUY: price must be <= this above EMA; SELL: <= this below EMA. Blocks overextended entries
 
 // Operational
 input bool            Shadow_Mode              = true;         // Shadow_Mode: true = suppress OrderSend, log signals only
@@ -141,6 +143,7 @@ datetime g_last_bar  = 0;
 datetime g_last_d1   = 0;
 bool     g_gate_long  = false;
 bool     g_gate_short = false;
+double   g_gate_ema   = 0.0;       // cached Gate EMA (shift=1) for gap check + logging
 
 double g_pip;           // 1 pip in price units (0.0001 for 5-digit AUDCAD)
 double g_tick_val;      // account-currency value of 1 tick per 1.0 lot
@@ -455,13 +458,32 @@ void RefreshGate()
     }
 
     double d1_close = iClose(g_sym, GateTimeframe, 1);
-    g_gate_long  = (d1_close > ema_buf[0]);
-    g_gate_short = (d1_close < ema_buf[0]);
+    g_gate_ema   = ema_buf[0];
+    g_gate_long  = (d1_close > g_gate_ema);
+    g_gate_short = (d1_close < g_gate_ema);
 
     if(Verbosity >= 2)
+    {
+        double gap_pips = (g_pip > 0.0) ? (d1_close - g_gate_ema) / g_pip : 0.0;
         Print("[GATE] D1_close=", DoubleToString(d1_close,5),
-              " EMA", GateEMA_Period, "=", DoubleToString(ema_buf[0],5),
+              " EMA", GateEMA_Period, "=", DoubleToString(g_gate_ema,5),
+              " gap_pips=", DoubleToString(gap_pips,1),
+              " max_gap=", DoubleToString(Max_EMA200_Gap_Pips,1),
               " gate_long=", g_gate_long, " gate_short=", g_gate_short);
+    }
+}
+
+// Signed gap from Gate EMA in pips (+ = above EMA, - = below). Returns false if over Max_EMA200_Gap_Pips.
+bool GateGapAllowsProbe(bool is_long, double price, double &gap_pips_out)
+{
+    gap_pips_out = 0.0;
+    if(!Enable_HTF_Gate || Max_EMA200_Gap_Pips <= 0.0 || g_gate_ema <= 0.0 || g_pip <= 0.0)
+        return true;
+
+    gap_pips_out = (price - g_gate_ema) / g_pip;
+    if(is_long)
+        return (gap_pips_out >= 0.0 && gap_pips_out <= Max_EMA200_Gap_Pips);
+    return (gap_pips_out <= 0.0 && (-gap_pips_out) <= Max_EMA200_Gap_Pips);
 }
 
 // === SECTION 7.6: ATR LADDER PAUSE STATE MACHINE (v1.6) ===
@@ -908,29 +930,43 @@ void RunTree(bool buy_f, bool sell_f)
     // --- Case B: no basket open — evaluate signal + gate ---
     if(buy_f)
     {
-        if(g_gate_long)
-            OpenProbe(true);
-        else
+        double eq = AccountInfoDouble(ACCOUNT_EQUITY);
+        double sig_close = iClose(g_sym, Signal_Timeframe, 1);
+        double gap_pips = 0.0;
+
+        if(!g_gate_long)
         {
-            double eq = AccountInfoDouble(ACCOUNT_EQUITY);
-            WriteLog("GATE_BLOCK", "LONG",
-                     iClose(g_sym,Signal_Timeframe,1), 0, eq, 0, 0, 0, 0,
-                     "htf_veto_buy");
+            WriteLog("GATE_BLOCK", "LONG", sig_close, 0, eq, 0, 0, 0, 0, "htf_veto_buy");
         }
+        else if(!GateGapAllowsProbe(true, sig_close, gap_pips))
+        {
+            WriteLog("GATE_BLOCK", "LONG", sig_close, 0, eq, 0, 0, 0, 0,
+                     "htf_gap_above gap=" + DoubleToString(gap_pips, 1) +
+                     " max=" + DoubleToString(Max_EMA200_Gap_Pips, 0));
+        }
+        else
+            OpenProbe(true);
         return;
     }
 
     if(sell_f)
     {
-        if(g_gate_short)
-            OpenProbe(false);
-        else
+        double eq = AccountInfoDouble(ACCOUNT_EQUITY);
+        double sig_close = iClose(g_sym, Signal_Timeframe, 1);
+        double gap_pips = 0.0;
+
+        if(!g_gate_short)
         {
-            double eq = AccountInfoDouble(ACCOUNT_EQUITY);
-            WriteLog("GATE_BLOCK", "SHORT",
-                     iClose(g_sym,Signal_Timeframe,1), 0, eq, 0, 0, 0, 0,
-                     "htf_veto_sell");
+            WriteLog("GATE_BLOCK", "SHORT", sig_close, 0, eq, 0, 0, 0, 0, "htf_veto_sell");
         }
+        else if(!GateGapAllowsProbe(false, sig_close, gap_pips))
+        {
+            WriteLog("GATE_BLOCK", "SHORT", sig_close, 0, eq, 0, 0, 0, 0,
+                     "htf_gap_below gap=" + DoubleToString(-gap_pips, 1) +
+                     " max=" + DoubleToString(Max_EMA200_Gap_Pips, 0));
+        }
+        else
+            OpenProbe(false);
         return;
     }
 }
@@ -1039,6 +1075,7 @@ int OnInit()
           " Fit_Check_Pad_Pips=", DoubleToString(Fit_Check_Pad_Pips,1), ")");
 
     Print("[ATR_PAUSE] enabled=", Enable_ATR_Pause,
+          " tf=", EnumToString(ATR_Timeframe),
           " fast=", ATR_Period_Fast, " slow=", ATR_Period_Slow,
           " pause_ratio=", DoubleToString(ATR_Pause_Ratio,2),
           " resume_ratio=", DoubleToString(ATR_Resume_Ratio,2),
@@ -1091,8 +1128,8 @@ int OnInit()
     h_gate = iMA(g_sym, GateTimeframe, GateEMA_Period, 0, MODE_EMA, PRICE_CLOSE);
 
     // v1.6: ATR handles on the signal timeframe.
-    h_atr_fast = iATR(g_sym, Signal_Timeframe, ATR_Period_Fast);
-    h_atr_slow = iATR(g_sym, Signal_Timeframe, ATR_Period_Slow);
+    h_atr_fast = iATR(g_sym, ATR_Timeframe, ATR_Period_Fast);
+    h_atr_slow = iATR(g_sym, ATR_Timeframe, ATR_Period_Slow);
 
     if(h_rsi == INVALID_HANDLE || h_bb == INVALID_HANDLE || h_gate == INVALID_HANDLE
        || h_atr_fast == INVALID_HANDLE || h_atr_slow == INVALID_HANDLE)
@@ -1132,6 +1169,8 @@ int OnInit()
             : StringFormat("manual override Default_Base_Lot_Size=%.2f", Default_Base_Lot_Size)),
           ". Min_Confluence_Count=", Min_Confluence_Count,
           ". ATR_Pause=", (Enable_ATR_Pause?"ON":"OFF"),
+          ". GateEMA=", GateEMA_Period,
+          " Max_EMA_Gap=", (Max_EMA200_Gap_Pips > 0.0 ? DoubleToString(Max_EMA200_Gap_Pips,0) : "OFF"),
           ". Exit: basket +/- ", TP_Basket_If_Total_Pips_GreaterThan_EqualTo,
           " pips. Single basket at a time.");
 

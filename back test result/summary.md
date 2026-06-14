@@ -1,4 +1,4 @@
-# Backtest Run Comparison — v1.4 & v1.5 (AUDCAD M15 cent)
+# Backtest Run Comparison — v1.4, v1.5 & v1.6 (AUDCAD M15 cent)
 
 All runs: symbol `AUDCADm#` (XM cent), `Max_Drawdown_Percentage = 35%`, HTF gate ON (D1 EMA20), `TP = 10 pips`. Rows sorted **descending — newest run first**.
 
@@ -6,47 +6,69 @@ All runs: symbol `AUDCADm#` (XM cent), `Max_Drawdown_Percentage = 35%`, HTF gate
 
 ## Settings
 
-| Run | EA | Period | Start $ | Lot mode | Base lot | Grid step | Max Lv | Min Conf |
-|---|---|---|---:|---|---:|---:|---:|---:|
-| **[v1.5_2025_2k_v6](v1.5_2025_result_v6(2k).md)** | **v1.5** | **2025 (full)** | **2,000** | **fixed** | **0.20** | **30** | **6** | **4** |
-| [v1.5_2025_2k_v5](v1.5_2025_result_v5(2k).md) | v1.5 | 2025 (full) | 2,000 | fixed | 0.30 | 30 | 6 | 4 |
-| **[v1.5_2025_2k_v4](v1.5_2025_result_v4(2k).md)** | **v1.5** | **2025 (full)** | **2,000** | **AUTO** | **0.82→1.45** | **30** | **6** | **4** |
-| [v1.5_2025_2k_v3](v1.5_2025_result_v3(2k).md) | v1.5 | 2025 (full) | 2,000 | fixed | 0.10 | 30 | 6 | 4 |
-| [v1.5_2025_2k](v1.5_2025_result_v1(2k).md) | v1.5 | 2025 (full) | 2,000 | fixed | 0.10 | 30 | 10 | 3 |
-| [v1.4_2025_v1](v1.4_2025_result_v1.md) | v1.4 | 2025 (full) | 1,000 | auto | 0.11 | 22 | 10 | — |
-| **[v1.5_2024_2k_v6](v1.5_2024_result_v6(2k).md)** | **v1.5** | **2024 (full)** | **2,000** | **fixed** | **0.20** | **30** | **6** | **4** |
-| [v1.5_2024_2k_v5](v1.5_2024_result_v5(2k).md) | v1.5 | 2024 (full) | 2,000 | fixed | 0.30 | 30 | 6 | 4 |
-| **[v1.5_2024_2k_v4](v1.5_2024_result_v4(2k).md)** | **v1.5** | **2024 (full)** | **2,000** | **AUTO** | **0.76→0.37** | **30** | **6** | **4** |
-| **[v1.5_2024_2k_v3](v1.5_2024_result_v3(2k).md)** | **v1.5** | **2024 (full)** | **2,000** | **fixed** | **0.10** | **30** | **6** ✅ | **4** ✅ |
-| [v1.5_2024_2k_v2](v1.5_2024_result_v2(2k).md) | v1.5 | 2024 (full) | 2,000 | fixed | 0.10 | 30 | 10 | 4 |
-| [v1.5_2024_2k](v1.5_2024_result_v1(2k).md) | v1.5 | 2024 (full) | 2,000 | fixed | 0.10 | 30 | 10 | 3 |
-| [v1.5_Jul2024](v1.5_July2025_result_v1.md) | v1.5 | **Jul 2024 only** | 1,000 | auto | 0.10 | 22 | 10 | **3** |
-| [v1.4_2024_v2](v1.4_2024_result_v2.md) | v1.4 | 2024 (full) | 1,000 | **fixed** | 0.10 | 22 | 10 | — |
-| [v1.4_2024_v1](v1.4_2024_result_v1.md) | v1.4 | 2024 (full) | 1,000 | auto | 0.11 | 22 | 10 | — |
-| [v1.4_2023_v1](v1.4_2023_result_v1.md) | v1.4 | 2023 (full) | 1,000 | auto | 0.10 → 0.16 | 22 | 10 | — |
+| Run | EA | Period | Start $ | Lot mode | Base lot | Grid step | Max Lv | Min Conf | ATR Pause |
+|---|---|---|---:|---|---:|---:|---:|---:|---:|
+| **[v1.6_2025_v10](v1.6_2025_result_v10(2k).md)** | **v1.6** | **2025 (full)** | **2,000** | **fixed** | **0.10** | **25** | **10** | **2** | **ON (H1) + EMA200 + gap150** |
+| **[v1.6_2024_v10](v1.6_2024_result_v10(2k).md)** | **v1.6** | **2024 (full)** | **2,000** | **fixed** | **0.10** | **25** | **10** | **2** | **ON (H1) + EMA200 + gap150** |
+| **[v1.6_2025_v9](v1.6_2025_result_v9(2k).md)** | **v1.6** | **2025 (full)** | **2,000** | **AUTO** | **0.20→0.28** | **25** | **10** | **2** | **ON (H1) + EMA200 + gap150** |
+| **[v1.6_2024_v9](v1.6_2024_result_v9(2k).md)** | **v1.6** | **2024 (full)** | **2,000** | **AUTO** | **0.18→0.27** | **25** | **10** | **2** | **ON (H1) + EMA200 + gap150** |
+| **[v1.6_2025_v8](v1.6_2025_result_v8(2k).md)** | **v1.6** | **2025 (full)** | **2,000** | **AUTO** | **0.16→0.20** | **30** | **10** | **3** | **ON (H1) + EMA200 + gap150** |
+| **[v1.6_2025_v7](v1.6_2025_result_v7(2k).md)** | **v1.6** | **2025 (full)** | **2,000** | **fixed** | **0.10** | **30** | **10** | **3** | **ON (H1) + EMA200 + gap150** |
+| **[v1.6_2024_v7](v1.6_2024_result_v7(2k).md)** | **v1.6** | **2024 (full)** | **2,000** | **AUTO** | **0.15→0.19** | **30** | **10** | **3** | **ON (H1) + EMA200 + gap150** |
+| **[v1.6_2024_v8](v1.6_2024_result_v8(2k).md)** | **v1.6** | **2024 (full)** | **2,000** | **fixed** | **0.10** | **30** | **10** | **3** | **ON (H1) + EMA200 + gap150** |
+| **[v1.6_2024_v3](v1.6_2025_result_v3(2k).md)** | **v1.6** | **2024 (full)** ⚠️ | **2,000** | **fixed** | **0.10** | **30** | **10** | **3** | **ON (H1) + EMA200** |
+| **[v1.6_2024_v2](v1.6_2025_result_v2(2k).md)** | **v1.6** | **2024 (full)** ⚠️ | **2,000** | **fixed** | **0.10** | **30** | **10** | **3** | **ON (H1)** |
+| **[v1.6_2024_v1](v1.6_2025_result_v1(2k).md)** | **v1.6** | **2024 (full)** ⚠️ | **2,000** | **fixed** | **0.10** | **30** | **10** | **3** | **ON (M15)** |
+| **[v1.5_2025_2k_v6](v1.5_2025_result_v6(2k).md)** | **v1.5** | **2025 (full)** | **2,000** | **fixed** | **0.20** | **30** | **6** | **4** | off |
+| [v1.5_2025_2k_v5](v1.5_2025_result_v5(2k).md) | v1.5 | 2025 (full) | 2,000 | fixed | 0.30 | 30 | 6 | 4 | off |
+| **[v1.5_2025_2k_v4](v1.5_2025_result_v4(2k).md)** | **v1.5** | **2025 (full)** | **2,000** | **AUTO** | **0.82→1.45** | **30** | **6** | **4** | off |
+| [v1.5_2025_2k_v3](v1.5_2025_result_v3(2k).md) | v1.5 | 2025 (full) | 2,000 | fixed | 0.10 | 30 | 6 | 4 | off |
+| [v1.5_2025_2k](v1.5_2025_result_v1(2k).md) | v1.5 | 2025 (full) | 2,000 | fixed | 0.10 | 30 | 10 | 3 | off |
+| [v1.4_2025_v1](v1.4_2025_result_v1.md) | v1.4 | 2025 (full) | 1,000 | auto | 0.11 | 22 | 10 | — | off |
+| **[v1.5_2024_2k_v6](v1.5_2024_result_v6(2k).md)** | **v1.5** | **2024 (full)** | **2,000** | **fixed** | **0.20** | **30** | **6** | **4** | off |
+| [v1.5_2024_2k_v5](v1.5_2024_result_v5(2k).md) | v1.5 | 2024 (full) | 2,000 | fixed | 0.30 | 30 | 6 | 4 | off |
+| **[v1.5_2024_2k_v4](v1.5_2024_result_v4(2k).md)** | **v1.5** | **2024 (full)** | **2,000** | **AUTO** | **0.76→0.37** | **30** | **6** | **4** | off |
+| **[v1.5_2024_2k_v3](v1.5_2024_result_v3(2k).md)** | **v1.5** | **2024 (full)** | **2,000** | **fixed** | **0.10** | **30** | **6** ✅ | **4** ✅ | off |
+| [v1.5_2024_2k_v2](v1.5_2024_result_v2(2k).md) | v1.5 | 2024 (full) | 2,000 | fixed | 0.10 | 30 | 10 | 4 | off |
+| [v1.5_2024_2k](v1.5_2024_result_v1(2k).md) | v1.5 | 2024 (full) | 2,000 | fixed | 0.10 | 30 | 10 | 3 | off |
+| [v1.5_Jul2024](v1.5_July2025_result_v1.md) | v1.5 | **Jul 2024 only** | 1,000 | auto | 0.10 | 22 | 10 | **3** | off |
+| [v1.4_2024_v2](v1.4_2024_result_v2.md) | v1.4 | 2024 (full) | 1,000 | **fixed** | 0.10 | 22 | 10 | — | off |
+| [v1.4_2024_v1](v1.4_2024_result_v1.md) | v1.4 | 2024 (full) | 1,000 | auto | 0.11 | 22 | 10 | — | off |
+| [v1.4_2023_v1](v1.4_2023_result_v1.md) | v1.4 | 2023 (full) | 1,000 | auto | 0.10 → 0.16 | 22 | 10 | — | off |
 
 ---
 
 ## Results
 
-| Run | Final $ | Net % | Probes | Closes | Win % | Net pips | Emerg | Block | Max legs | End state |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| **v1.5_2025_2k_v6** | **2,274.29** | **+13.71%** ✅ | **152** | **152** | **96.1%** | **—** | **0** | **0** | **4** | **OK (easy year)** |
-| v1.5_2025_2k_v5 | 2,411.31 | **+20.57%** ✅ | 152 | 152 | 96.1% | +1,636.0 | 0 | 0 | 4 | OK (2024 risk) |
-| **v1.5_2025_2k_v4** | **3,500.64** | **+75.03%** 🚀 | **152** | **152** | **96.1%** | **+1,636.0** | **0** | **0** | **4** | **OK (cap armed)** |
-| v1.5_2025_2k_v3 | 2,137.14 | **+6.86%** ✅ | 152 | 152 | 96.1% | +1,636.0 | 0 ✅ | 0 | 4 | OK |
-| v1.5_2025_2k | 2,313.27 | **+15.66%** | 258 | 257 | 95.7% | +2,840.7 | 0 | 0 | 6 | OK |
-| v1.4_2025_v1 | 2,074.72 | **+107.47%** | 622 | 368 | 95.4% | — | 0 | 0 | 6 | OK |
-| **v1.5_2024_2k_v6** | **1,742.37** | **−12.88%** ❌ | **119** | **119** | **98.3%** | **—** | **1** (Aug 5) | **0** | **L6@48.20 lots** | **OK (no freeze)** |
-| v1.5_2024_2k_v5 | 1,873.03 | **−6.35%** | 123 | 123 | 98.4% | — | **1** (Jul 31) | 0 | L6@72.30 lots | OK (no freeze) |
-| **v1.5_2024_2k_v4** | **1,255.59** | **−37.22%** ❌ | **123** | **123** | **96.7%** | **—** | **3** (Apr 9, Apr 19, Jul 25) | **4** | **L6@94.83 lots** | **OK (no freeze)** |
-| **v1.5_2024_2k_v3** | **2,159.23** | **+7.96%** ✅ | **113** | **113** | **99.1%** | **+1,286.5** | **0** ✅ | **0** | **6** | **OK (full year)** |
-| v1.5_2024_2k_v2 | 1,610.73 | **−19.46%** | 119 | 119 | 98.3% | +1,182.9 | **1** (Aug 5) | 0 | 9 | OK (full year) |
-| **v1.5_2024_2k** | **1,204.19** | **−39.79%** | **145** | **145** | **95.2%** | **+1,327.5** | **2** (Aug 5, Sep 27) | **1** | **9** | **frozen Q4** |
-| v1.5_Jul2024 | 751.66 | **−24.83%** | — | 14 | 92.9% | — | **1** (Jul 25) | 1 | 8 | frozen |
-| v1.4_2024_v2 | 934.97 | **−6.50%** | 151 | 151 | 95.4% | +1,610.9 | **1** (Jul 25) | 2 | 9 | frozen |
-| v1.4_2024_v1 | 815.27 | **−18.50%** | 138 | 84 | ~94% | — | **1** (Apr 9) | 1 | 8 | frozen |
-| v1.4_2023_v1 | 838.18 | **−16.18%** | — | 221 | 95.5% | +2,555 | **2** (Jun) | 0 | 8 | frozen |
+| Run | Final $ | Net % | Probes | Closes | Win % | Net pips | Emerg | Block | Max legs | ATR pauses | End state |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| **v1.6_2025_v10** | **2,376.43** | **+18.82%** ✅ | **289** | **288** | **93.4%** | **+3,082.4** | **0** | **0** | **L6** | 4 | **OK** |
+| **v1.6_2024_v10** | **2,428.55** | **+21.43%** ✅ | **224** | **224** | **98.2%** | **+2,734.4** | **0** | **0** | **L8** | 6 | **OK** |
+| **v1.6_2025_v9** | **2,889.50** | **+44.47%** 🚀 | **289** | **288** | **93.4%** | **+3,082.4** | **0** | **0** | **L6** | 4 | **OK (cap live)** |
+| **v1.6_2024_v9** | **2,936.47** | **+46.82%** 🚀 | **224** | **224** | **98.2%** | **+2,734.4** | **0** | **0** | **L8** ⚠️ | 6 | **OK (cap live)** |
+| **v1.6_2025_v8** | **2,400.41** | **+20.02%** ✅ | **241** | **240** | **93.8%** | **+2,449.1** | **0** | **0** | **L5** | 4 | **OK** |
+| **v1.6_2025_v7** | **2,222.51** | **+11.13%** ✅ | **241** | **240** | **93.8%** | **+2,449.1** | **0** | **0** | **L5** | 4 | **OK** |
+| **v1.6_2024_v7** | **2,461.43** | **+23.07%** ✅ | **169** | **169** | **97.6%** | **+2,095.3** | **0** | **0** | **L6** | 6 | **OK** |
+| **v1.6_2024_v8** | **2,276.21** | **+13.81%** ✅ | **169** | **169** | **97.6%** | **+2,095.3** | **0** | **0** | **L6** | 6 | **OK** |
+| **v1.6_2024_v3** | **1,769.39** | **−11.53%** ⚠️ | **203** | **203** | **99.5%** | **—** | **1** (Aug 5) | **0** | **L9** | ~5 | **active Dec** ✅ |
+| **v1.6_2024_v2** | **1,203.83** | **−39.81%** ❌ | **145** | **145** | **98.6%** | **—** | **2** (Aug 5, Sep 27) | **1** | **L9** | **5** | **frozen Q4** |
+| **v1.6_2024_v1** | **1,204.18** | **−39.79%** ❌ | **147** | **147** | **98.6%** | **—** | **2** (Aug 5, Sep 27) | **1** | **L9** | **62** | **frozen Q4** |
+| **v1.5_2025_2k_v6** | **2,274.29** | **+13.71%** ✅ | **152** | **152** | **96.1%** | **—** | **0** | **0** | **4** | — | **OK (easy year)** |
+| v1.5_2025_2k_v5 | 2,411.31 | **+20.57%** ✅ | 152 | 152 | 96.1% | +1,636.0 | 0 | 0 | 4 | — | OK (2024 risk) |
+| **v1.5_2025_2k_v4** | **3,500.64** | **+75.03%** 🚀 | **152** | **152** | **96.1%** | **+1,636.0** | **0** | **0** | **4** | — | **OK (cap armed)** |
+| v1.5_2025_2k_v3 | 2,137.14 | **+6.86%** ✅ | 152 | 152 | 96.1% | +1,636.0 | 0 ✅ | 0 | 4 | — | OK |
+| v1.5_2025_2k | 2,313.27 | **+15.66%** | 258 | 257 | 95.7% | +2,840.7 | 0 | 0 | 6 | — | OK |
+| v1.4_2025_v1 | 2,074.72 | **+107.47%** | 622 | 368 | 95.4% | — | 0 | 0 | 6 | — | OK |
+| **v1.5_2024_2k_v6** | **1,742.37** | **−12.88%** ❌ | **119** | **119** | **98.3%** | **—** | **1** (Aug 5) | **0** | **L6@48.20 lots** | — | **OK (no freeze)** |
+| v1.5_2024_2k_v5 | 1,873.03 | **−6.35%** | 123 | 123 | 98.4% | — | **1** (Jul 31) | 0 | L6@72.30 lots | — | OK (no freeze) |
+| **v1.5_2024_2k_v4** | **1,255.59** | **−37.22%** ❌ | **123** | **123** | **96.7%** | **—** | **3** (Apr 9, Apr 19, Jul 25) | **4** | **L6@94.83 lots** | — | **OK (no freeze)** |
+| **v1.5_2024_2k_v3** | **2,159.23** | **+7.96%** ✅ | **113** | **113** | **99.1%** | **+1,286.5** | **0** ✅ | **0** | **6** | — | **OK (full year)** |
+| v1.5_2024_2k_v2 | 1,610.73 | **−19.46%** | 119 | 119 | 98.3% | +1,182.9 | **1** (Aug 5) | 0 | 9 | — | OK (full year) |
+| **v1.5_2024_2k** | **1,204.19** | **−39.79%** | **145** | **145** | **95.2%** | **+1,327.5** | **2** (Aug 5, Sep 27) | **1** | **9** | — | **frozen Q4** |
+| v1.5_Jul2024 | 751.66 | **−24.83%** | — | 14 | 92.9% | — | **1** (Jul 25) | 1 | 8 | — | frozen |
+| v1.4_2024_v2 | 934.97 | **−6.50%** | 151 | 151 | 95.4% | +1,610.9 | **1** (Jul 25) | 2 | 9 | — | frozen |
+| v1.4_2024_v1 | 815.27 | **−18.50%** | 138 | 84 | ~94% | — | **1** (Apr 9) | 1 | 8 | — | frozen |
+| v1.4_2023_v1 | 838.18 | **−16.18%** | — | 221 | 95.5% | +2,555 | **2** (Jun) | 0 | 8 | — | frozen |
 
 ---
 
@@ -185,6 +207,92 @@ All runs: symbol `AUDCADm#` (XM cent), `Max_Drawdown_Percentage = 35%`, HTF gate
 - **Verdict**: config validated on both 2024 (hard) and 2025 (easy). Two-out-of-three years showing consistent positive returns with zero structural risk. **Final validation gate: 2023 replay.**
 - analysis: see [v1.5_2025_result_v3(2k).md](v1.5_2025_result_v3(2k).md)
 
+### v1.6_2024_v10 — v9 knobs, fixed 0.10: +21.43%, same trades, wc_pct≈19%
+- **Only change from v9: `Auto_Compute=false`, fixed 0.10.** Same Min_Conf=2, step=25, gap150 stack.
+- **Identical 224 probes / +2,734 net pips to v9 auto** — dollar return ≈ 46% of v9 (+$429 vs +$936) because lot is ~half.
+- **+21.43% beats v8 fixed (+13.81%) by +7.6 pp** with same zero-emergency record. wc_pct=18.97% (vs v9's 34%) — **2× cap headroom**.
+- Jul 18 blocked; Jul 22 L5 closed +11.4 pips at **16.90 lots** (vs 35.49 v9). Apr L8 SHORT: **42.10 lots**, +11.4 pips (vs 84.20 v9) — same basket, half exposure.
+- **2-year with 2025 v10: +$805** (vs v8/v7 +$499, v9 +$1,826). **Leading fixed-lot production candidate** pending 2023.
+- analysis: [v1.6_2024_result_v10(2k).md](v1.6_2024_result_v10(2k).md)
+
+### v1.6_2025_v10 — same fixed aggressive stack: +18.82% on easy year
+- **Identical 289 probes / +3,082 net pips to v9.** +18.82% vs v9 +44.47% — pure sizing difference.
+- Max L6 (Dec 11), 0 emergencies, wc_pct=17.47%. Beats v7 fixed (+11.13%) by +7.7 pp with same gate stack family.
+- analysis: [v1.6_2025_result_v10(2k).md](v1.6_2025_result_v10(2k).md)
+
+### v1.6_2024_v9 — aggressive stack on gap150: +46.82%, L8 close call, still zero emergencies
+- **Changes from v7/v8**: `Min_Confluence_Count=2`, `Grid_Step_Pips=25`, auto ON. Same EMA200 + gap150 + H1 ATR + Max_Level=10.
+- **+46.82%** — highest 2024 return in the matrix (+$936). 224 probes (+55 vs v7), wc_pct=34.15%, base 0.18→0.27.
+- **Jul 18 fatal still blocked** (`htf_gap_above gap=227.1`); Jul 22 replacement LONG closed L5 Jul 30 (+11.4 pips, 35.49 lots).
+- **April L8 SHORT (Apr 2 → Apr 10)** — 84.20 lots, +11.4 pips. Same ~195-pip adverse rally that **emergency'd v1.5 v4 auto twice** in April. Survived here; **closest cap call in the test set**.
+- Only 1 basket reached L7+ all year. 4 negative closes (rollover). Gap blocks: 1,086 (~2× v8).
+- **2-year with 2025 v9: +$1,826** (vs v7/v8 auto +$861). Tail risk is real — validate 2023 before production.
+- analysis: [v1.6_2024_result_v9(2k).md](v1.6_2024_result_v9(2k).md)
+
+### v1.6_2025_v9 — same aggressive config on easy year: +44.47%
+- **Identical config to 2024 v9.** 289 probes (+48 vs v8 auto), 0 emergencies, max L6 (Dec 11 LONG, +11.3 pips).
+- **+44.47%** vs v8 auto +20.02% — Min_Conf=2 + step=25 + larger auto base compound on the easy year.
+- 828 gap blocks (vs 433 at Min_Conf=3). 19 negative closes = rollover only.
+- Gives up v1.5 v4's +75% easy-year peak but pairs with +47% hard year instead of −37%.
+- analysis: [v1.6_2025_result_v9(2k).md](v1.6_2025_result_v9(2k).md)
+
+### v1.6_2024_v8 — **`Max_EMA200_Gap_Pips=150` breaks 2024**: +13.81%, zero emergencies
+- **Key addition over v3**: `Max_EMA200_Gap_Pips=150` on top of EMA200 + H1 ATR. Fixed 0.10, Min_Conf=3, Max_Level=10.
+- **Jul 18 10:30 fatal LONG @ 0.92103 blocked** at the exact bar: `htf_gap_above gap=227.1 max=150`. Price was 227 pips above EMA200 — parabolic extension, not a mean-reversion zone.
+- **Replacement entry Jul 22 15:45 @ 0.91399** (~71 pips lower). L5 basket closed Jul 30 +10.5 pips (16.90 lots). Survived Aug 5 low with no emergency.
+- **562 gap blocks** (100 above / 54 below) on top of EMA200 veto. Fewer probes than v3 (169 vs 203) but all survivable.
+- **First positive full-year 2024 at Max_Level=10** without emergency. Beats v1.5 v3 (+7.96%) by +5.85 pp with 50% more trades.
+- 2-year with 2025 v7 fixed: **+$499**. analysis: [v1.6_2024_result_v8(2k).md](v1.6_2024_result_v8(2k).md)
+
+### v1.6_2024_v7 — same gate stack, auto-sizing: +23.07% on identical 169 trades
+- **Only change from v8: `Auto_Compute=true`.** Same signals, same gate blocks, same 0 emergencies.
+- Base auto-computed 0.15 → 0.19; wc_pct=33.79% (cap armed). Profit ~1.67× fixed v8 (+$461 vs +$276).
+- **Why auto works here but v1.5 v4 auto failed**: gap filter blocked the Jul 18 parabolic L1 that auto-sized v4 couldn't avoid. Auto is safe only when the gate prevents the catastrophic entry.
+- 2-year with 2025 v8 auto: **+$861**. analysis: [v1.6_2024_result_v7(2k).md](v1.6_2024_result_v7(2k).md)
+
+### v1.6_2025_v7 — gap stack validates on easy year: +11.13%, beats v1.5 v3
+- Same config as 2024 v8 (EMA200 + gap150 + fixed 0.10). 241 probes, 0 emergencies, max L5.
+- **+11.13% vs v1.5 v3's +6.86%** — +4.27 pp with 59% more probes. Gate stack trades more actively than Min_Conf=4 while staying clean.
+- 433 gap blocks (100 above / 100 below — balanced on easy year). 15 negative closes = rollover spread only.
+- 2-year with 2024 v8: **+$499** vs v1.5 v3's +$296 (+$203). analysis: [v1.6_2025_result_v7(2k).md](v1.6_2025_result_v7(2k).md)
+
+### v1.6_2025_v8 — auto on easy year: +20.02%, identical trades to v7
+- **Only change from v7: `Auto_Compute=true`.** 241/240 probes/closes, 0 emergencies, +20.02%.
+- Lower peak than v1.5 v4 auto (+75%) because gate blocks ~433 entries/year — but v4 auto was **−37% on 2024**. v6 auto pair: +23%/+20% both years.
+- 2-year auto sum **+$861** vs fixed **+$499**. Cap live at wc_pct≈34%. analysis: [v1.6_2025_result_v8(2k).md](v1.6_2025_result_v8(2k).md)
+
+### v1.6_2024_v3 — EMA200 gate: Sep emergency PREVENTED, account active all year, still −11.53%
+- **⚠️ Filename says "2025" but test period is 2024** (same naming error).
+- Only change from v2: `GateEMA_Period = 200` (D1 EMA200 instead of EMA20).
+- **EMA200 says "AUDCAD is in a long-term bull trend" for most of 2024** — blocked **1,371 SHORT signals** vs only 523 LONG blocks. The strategy ran as effectively "longs only" for most of the year.
+- **Sep 11 23:15 SHORT (the fatal Sep basket in v1/v2) blocked at the exact bar** (`htf_veto_sell`) — because AUDCAD was above its 200-day average. No Sep 27 emergency. No Q4 freeze. Account active through Dec 30. **203 probes vs 145 in v2** — more trades because EMA200 passes more LONG signals.
+- **Jul 18 LONG fatal basket: identical** — AUDCAD was above EMA200 (correctly trend-aligned), gate said "long OK." Same 9 legs, same Aug 5 09:02 emergency, same −147.7 pips on 52.90 lots (~$591 loss).
+- **Why still negative**: −11.53% not flat or positive because (a) the one remaining emergency cost ~$591, and (b) recovery at 0.10 fixed lot is ~$0.07 per L1 close — 202 TP closes across the year generates only ~$360 total TP profit. Math: +$360 − $591 = −$231. Account survives but can't recover fast enough.
+- **EMA200 vs EMA20 head-to-head**: −11.53% vs −39.79% — a 70% improvement in loss magnitude, purely from a slower EMA period. The structural problem (Max_Level=10 allows 9-leg accumulation) remains.
+- **The lesson**: EMA200 is a genuine macro filter — useful for blocking counter-trend entries in a directional year. But it cannot protect against a trend-aligned entry followed by a violent counter-move. Only `Max_Level=6` has proven it can absorb that.
+- **Next test**: `Min_Conf=4 + Max_Level=6 + EMA200` — all three layers combined.
+- analysis: see [v1.6_2025_result_v3(2k).md](v1.6_2025_result_v3(2k).md)
+
+### v1.6_2024_v2 — H1 ATR: only 5 pauses all year, missed the fatal period entirely
+- **⚠️ Filename says "2025" but test period is 2024** (same naming error as v1).
+- Only change from v1: `ATR_Timeframe = PERIOD_H1` (vs M15 in v1).
+- **5 pause activations** vs 62 on M15 — H1 smooths out M15 spikes. Only triggers when an entire session is hot (NFP, risk-off shock). Routine intraday volatility is invisible.
+- **Fatal Jul 18 basket: zero H1 ATR response.** On Jul 25 (the critical day), `H1 atr_ratio=1.16` — completely below the 1.8 threshold. All 9 legs added unimpeded. The H1 pause only fired at **Aug 5 11:00 — 2 hours after the emergency at 09:02**.
+- Sep 19 pause did delay L7 of the Sep emergency basket by ~15 hours. Basket still emergency'd on Sep 27.
+- **Final: $1,203.83 — slightly WORSE than ATR-OFF ($1,204.19)**. The 5 pauses on non-fatal May/June baskets may have slightly altered their leg timing to disadvantage; the fatal baskets were untouched.
+- **Three-way verdict** (ATR OFF / M15 ATR / H1 ATR): $1,204.19 / $1,204.18 / $1,203.83 — within $0.36 of each other. ATR pause in any timeframe has zero structural impact on the 2024 failure mode.
+- **Definitive conclusion**: 2024 killed the EA via slow 18-day directional drift, not volatility spikes. ATR measures per-bar volatility; it is blind to direction and duration. `Max_Level=6` is the only tested fix.
+- analysis: see [v1.6_2025_result_v2(2k).md](v1.6_2025_result_v2(2k).md)
+
+### v1.6_2024_v1 — ATR pause ON (M15), same config as v1.5_2024_2k → same result ($0.01 difference)
+- **⚠️ Filename says "2025" but test period is 2024-01-01 → 2024-12-31** (naming error, consistent with earlier v1.5_July2025 typo).
+- Same base config as `v1.5_2024_2k` (Min_Conf=3, Max_Level=10, fixed 0.10, Grid=30, $2k) with the only addition being `Enable_ATR_Pause=true`.
+- **ATR pause activated 62 times, blocking 491 potential leg additions.** Despite this, the result is bit-for-bit identical: same 2 emergencies (Aug 5 LONG L9, Sep 27 SHORT L8), same frozen Q4, final balance $1,204.18 vs $1,204.19 (ATR-OFF).
+- **Why it made no difference**: 2024's fatal baskets accumulated over 2–3 *weeks* of slow, step-by-step adverse movement. ATR pause targets *fast bars* (ATR(14)/ATR(100) ≥ 1.8). Between those fast bursts, the market calmed, the EA resumed, and added the next leg. The emergencies were inevitable regardless.
+- **BLOCK_ADD (dd_cap_fwd) still functioned correctly**: Sep 27 L9 attempt was blocked because post-E1 equity could not afford a 9th leg under MaxDD=35%.
+- **Structural finding**: ATR pause is a noise filter, not a trend-protection tool. It will show benefit only in scenarios where a single fast spike (not a sustained move) would have forced a premature leg addition.
+- analysis: see [v1.6_2025_result_v1(2k).md](v1.6_2025_result_v1(2k).md)
+
 ---
 
 ## At-a-glance read
@@ -205,3 +313,8 @@ All runs: symbol `AUDCADm#` (XM cent), `Max_Drawdown_Percentage = 35%`, HTF gate
 6e. **CORRECTION — a capped emergency at 0.30 is survivable, not catastrophic** (v5 2024 proof). The projected "−35%" for 0.30 on 2024 was 5× too pessimistic. Actual: **−6.35%, 1 emergency, recovered.** The cap fires at 35% and CUTS the loss (doesn't wait for the bottom); at $2k the post-emergency equity (~$1,400) stays above the freeze floor, so the EA recovers. April baskets that auto-0.76 emergency'd twice, 0.30 rode out green. **The real picture is a variance spectrum, all survivable at $2k**: 0.10 = 0 emerg / +7.96%/+6.86%; 0.30 = 1 emerg / −6.35%/+20.57%; auto = 3 emerg / −37.22%/+75.03%. 2-year totals: 0.10 = +$296, 0.30 = +$284 (nearly tied, different shape). The freeze that doomed $1k runs needs equity < $963 floor — at $2k a single capped emergency doesn't get there.
 6f. **The fixed-lot risk curve is a VALLEY, not a monotonic ladder** (v6 0.20 finding). Filling in the gap between 0.10 and 0.30 on 2024 produced the counterintuitive result: **0.20 = −12.88%, WORSE than 0.30's −6.35%.** Both lots trigger the *same* unavoidable Jul-16 emergency (capped at 35% of equity → ~$590 either way), but winning-basket profit scales with lot size, so 0.20's smaller wins recover less. Once a lot crosses the emergency threshold (≈0.17), shrinking it doesn't reduce the capped loss — it just shrinks the recovery. **0.20 is a dominated option**: too big to dodge the emergency (like 0.10), too small to recover well (like 0.30). 2-year sums: 0.10 = +$296, **0.20 = +$17 (worst)**, 0.30 = +$284. This also pins the zero-emergency safe ceiling firmly **below 0.20** (0.10 floats the fatal basket to 20.3% DD; 0.20 to ~40% > 35% cap), consistent with the ~0.15–0.17 estimate. **Next: test 0.15 — the last untested sweet-spot candidate.**
 7. **The 270-pip ladder coverage wall is no longer the binding constraint.** At Max_Level=6 the ladder spans 150 pips, but the cap-firing threshold (490 pips past L1) is bigger than the move. The remaining concerns are: (a) opportunity cost when stuck in a deep basket (31 days for the Jul 16 trade), (b) the still-untested 2023 replay.
+8. **ATR pause (v1.6) had zero impact on the hard year — confirmed across M15 AND H1 timeframes.** Three-way comparison (ATR OFF / M15 ATR / H1 ATR): final balances $1,204.19 / $1,204.18 / $1,203.83 — within $0.36. Same emergencies, same dates. H1 ATR fired only 5 times all year and missed the fatal Jul-Aug period entirely (H1 ratio=1.16 on Jul 25 — no spike detected; pause fired at 11:00 Aug 5, **2 hours after the 09:02 emergency**). ATR measures volatility; 2024 killed via slow 18-day directional drift that looks "calm" to any ATR measure. **`Max_Level=6` remains the only tested structural fix.**
+9. **EMA200 gate (v1.6 v3) cut the 2024 loss by 70%: −11.53% vs −39.79%, and kept the account alive all year.** The EMA200 blocked 1,371 SHORT entries (vs 523 LONG blocks) because AUDCAD was above its 200-day average for most of 2024 — effectively running "longs only." The Sep 11 SHORT (which became the fatal Sep basket in previous runs) was blocked at the exact bar. The Jul 18 LONG was NOT blocked (correctly trend-aligned to EMA200). Result: 1 emergency instead of 2, no Q4 freeze, 203 trades active through Dec 30. Still negative because: (a) the one emergency cost ~$591 and (b) recovery at 0.10 fixed lot is ~$0.07/close — 202 wins earned only ~$360. **EMA200 alone cannot fix trend-aligned parabolic entries.**
+10. **BREAKTHROUGH — `Max_EMA200_Gap_Pips=150` (v1.6 v7/v8) is the missing layer.** Blocks probes when price is >150 pips from EMA200. Jul 18 10:30 fatal LONG (gap=227 pips) **killed at the bar**; replacement Jul 22 entry 71 pips lower closed L5 at TP. **2024: +13.81% fixed / +23.07% auto, 0 emergencies** (vs v3 EMA200-only −11.53% with 1 emergency). **2025: +11.13% fixed / +20.02% auto, 0 emergencies** (vs v1.5 v3 +6.86%). **First config positive on BOTH years at $2k**: fixed 2-yr sum **+$499** (+$203 vs v1.5 v3); auto 2-yr **+$861**. Mechanism: don't mean-revert when price is parabolic vs the 200-day mean. Auto-sizing becomes viable again **only paired with this gap cap** (v1.5 v4 auto alone was −37% on 2024). **2023 replay still mandatory.** Optional overlays: Min_Conf=4, Max_Level=6 for defense-in-depth.
+11. **v9 aggressive stack (Min_Conf=2, step=25, auto, gap150) — profit ceiling on tested years, cap live.** Same gate as v7/v8 plus hair-trigger confluence + tighter grid. **2024: +46.82% (L8 Apr basket survived, +11.4 pips); 2025: +44.47% (max L6). 0 emergencies both years. 2-yr sum +$1,826** — 2.1× v7/v8 auto. April L8 SHORT (84 lots) is the same move that emergency'd v1.5 v4 auto — survived but proves wc_pct=35% was **engaged**. **Not first-deploy safe** until 2023 confirms.
+12. **v10 = v9 with fixed 0.10 — best fixed-lot 2-year result (+$805), recommended production candidate.** Same 224/289 probes and net pips as v9; return ≈ 45% of v9 auto because lot is fixed small. **2024: +21.43% (L8 at 42 lots, wc_pct≈19%); 2025: +18.82%. 0 emergencies both years.** Beats v8/v7 fixed (+$499) by +61% with ~2× the wc_pct headroom of v9. **Sizing dial**: v10 fixed for deploy, v9 auto for max return after 2023 gate clears.
