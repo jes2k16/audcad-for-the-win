@@ -7,6 +7,20 @@ from collections import Counter
 BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "back test result")
 
 
+def resolve_log_path(name):
+    """Find log in back test result root or version subfolders (1.4, 1.5, 1.6)."""
+    root = BASE
+    direct = os.path.join(root, name)
+    if os.path.isfile(direct):
+        return direct
+    m = re.match(r"v1\.(\d+)_", name)
+    if m:
+        sub = os.path.join(root, f"1.{m.group(1)}", name)
+        if os.path.isfile(sub):
+            return sub
+    return direct
+
+
 def parse_log(path):
     encodings = ["utf-8", "utf-16", "utf-16-le", "latin-1"]
     lines = None
@@ -171,7 +185,7 @@ def main():
         "v1.6_2024_result_v8(2k).log",
     ]
     for fn in files:
-        path = os.path.join(BASE, fn)
+        path = resolve_log_path(fn)
         r = parse_log(path)
         fe = r["final_eq"]
         net = fe - r["start_eq"] if fe else None
